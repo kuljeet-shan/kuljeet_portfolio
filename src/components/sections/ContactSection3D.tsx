@@ -79,8 +79,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Official Email",
-    value: "kuljeet@christuniversity.in",
-    href: "mailto:kuljeet@christuniversity.in",
+    value: "kuljeet.singh@christuniversity.in",
+    href: "mailto:kuljeet.singh@christuniversity.in",
   },
   {
     icon: Mail,
@@ -109,8 +109,8 @@ const contactInfo = [
   {
     icon: Globe,
     label: "Website",
-    value: "kuljeet-six.vercel.app",
-    href: "https://kuljeet-six.vercel.app/",
+    value: "kuljeet-portfolio.vercel.app",
+    href: "https://kuljeet-portfolio.vercel.app/",
   },
 ];
 
@@ -258,7 +258,7 @@ export const ContactSection = () => {
 
               <div className="mt-5 flex flex-wrap gap-3">
                 <Button asChild className="bg-primary text-primary-foreground hover:opacity-90">
-                  <a href="mailto:kuljeet@christuniversity.in">
+                  <a href="mailto:kuljeet.singh@christuniversity.in">
                     <Mail className="mr-2 h-4 w-4" />
                     Send Email
                   </a>
