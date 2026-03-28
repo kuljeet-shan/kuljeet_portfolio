@@ -51,7 +51,15 @@ function NeuralConstellation({ count = 80 }: ParticleProps) {
   );
 }
 
-function OrbitRing({ radius = 1.8, y = 0, speed = 0.4 }: { radius?: number; y?: number; speed?: number }) {
+function OrbitRing({
+  radius = 1.8,
+  y = 0,
+  speed = 0.4,
+}: {
+  radius?: number;
+  y?: number;
+  speed?: number;
+}) {
   const ref = useRef<Mesh>(null);
 
   useFrame((state) => {
@@ -104,7 +112,7 @@ function FloatingResearchCore() {
 
       <Float speed={1.4} floatIntensity={0.9}>
         <Html position={[0, 2.4, 0]} center>
-          <div className="rounded-full border border-cyan-400/30 bg-slate-950/75 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-cyan-200 backdrop-blur">
+          <div className="rounded-full border border-accent/30 bg-background/80 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-accent backdrop-blur">
             AI • MEDICAL IMAGING • HEALTHCARE
           </div>
         </Html>
@@ -197,27 +205,27 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b border-border/40 bg-slate-950 text-slate-50"
+      className="relative overflow-hidden border-b border-border bg-background text-foreground"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_30%),radial-gradient(circle_at_left,rgba(139,92,246,0.18),transparent_28%),linear-gradient(to_bottom,rgba(2,6,23,0.95),rgba(2,6,23,1))]" />
-      <div className="absolute inset-0 opacity-30 hero-grid" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.12),transparent_30%),radial-gradient(circle_at_left,rgba(139,92,246,0.10),transparent_28%)] dark:bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_30%),radial-gradient(circle_at_left,rgba(139,92,246,0.18),transparent_28%),linear-gradient(to_bottom,rgba(2,6,23,0.95),rgba(2,6,23,1))]" />
+      <div className="absolute inset-0 opacity-20 dark:opacity-30 hero-grid" />
 
       <div className="container relative z-10 mx-auto px-6 py-20 md:py-28">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-8">
             <div className="space-y-4">
-              <Badge className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/10">
+              <Badge className="border-accent/30 bg-accent/10 text-accent hover:bg-accent/10">
                 Assistant Professor • AI Researcher
               </Badge>
 
-              <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+              <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl">
                 Dr. Kuljeet Singh
               </h1>
 
-              <p className="max-w-2xl text-lg text-slate-300 md:text-xl">
-                Advancing <span className="text-cyan-300">medical imaging</span>,
-                <span className="text-violet-300"> brain healthcare</span>, and
-                <span className="text-teal-300"> AI-driven diagnostics</span> through research,
+              <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
+                Advancing <span className="text-primary">medical imaging</span>,
+                <span className="text-violet-600 dark:text-violet-300"> brain healthcare</span>, and
+                <span className="text-accent"> AI-driven diagnostics</span> through research,
                 teaching, and real-world academic innovation.
               </p>
             </div>
@@ -226,10 +234,10 @@ export const HeroSection = () => {
               {stats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm"
+                  className="rounded-2xl border border-border bg-card/60 px-5 py-4 backdrop-blur-sm"
                 >
-                  <div className="text-2xl font-semibold text-white">{stat.value}</div>
-                  <div className="mt-1 text-sm text-slate-300">{stat.label}</div>
+                  <div className="text-2xl font-semibold text-card-foreground">{stat.value}</div>
+                  <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -237,7 +245,7 @@ export const HeroSection = () => {
             <div className="flex flex-wrap gap-3">
               <Button
                 size="lg"
-                className="bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+                className="bg-primary text-primary-foreground hover:opacity-90"
                 onClick={() =>
                   document.getElementById("research")?.scrollIntoView({ behavior: "smooth" })
                 }
@@ -249,7 +257,7 @@ export const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/20 bg-white/5 text-white hover:bg-white/10"
+                className="border-border bg-card/50 text-foreground hover:bg-card"
                 onClick={() =>
                   document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
                 }
@@ -262,7 +270,7 @@ export const HeroSection = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-violet-400/30 bg-violet-400/10 text-violet-100 hover:bg-violet-400/20"
+                className="border-border bg-card/50 text-foreground hover:bg-card"
               >
                 <a href={cvPdf} target="_blank" rel="noreferrer">
                   <Download className="mr-2 h-4 w-4" />
@@ -280,7 +288,7 @@ export const HeroSection = () => {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:border-cyan-300/40 hover:bg-white/10 hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-2 text-sm text-foreground transition hover:border-accent/40 hover:bg-card"
                   >
                     <Icon className="h-4 w-4" />
                     {item.label}
@@ -292,15 +300,15 @@ export const HeroSection = () => {
 
           <div className="relative">
             <div className="hero-glow absolute inset-0 rounded-[2rem]" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md">
+            <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card/50 shadow-2xl backdrop-blur-md">
               <div className="h-[420px] w-full md:h-[520px]">
                 {supported !== false ? (
                   <HeroScene />
                 ) : (
-                  <div className="flex h-full flex-col items-center justify-center bg-[radial-gradient(circle,rgba(34,211,238,0.15),transparent_40%),radial-gradient(circle_at_top,rgba(139,92,246,0.18),transparent_30%)] px-8 text-center">
-                    <div className="mb-4 h-28 w-28 rounded-full border border-cyan-300/30 bg-cyan-300/10" />
-                    <h3 className="text-2xl font-semibold">3D research preview</h3>
-                    <p className="mt-3 max-w-md text-slate-300">
+                  <div className="flex h-full flex-col items-center justify-center bg-[radial-gradient(circle,rgba(34,211,238,0.12),transparent_40%),radial-gradient(circle_at_top,rgba(139,92,246,0.12),transparent_30%)] px-8 text-center">
+                    <div className="mb-4 h-28 w-28 rounded-full border border-accent/30 bg-accent/10" />
+                    <h3 className="text-2xl font-semibold text-foreground">3D research preview</h3>
+                    <p className="mt-3 max-w-md text-muted-foreground">
                       This portfolio includes interactive 3D visuals for AI, healthcare analytics,
                       and academic research themes.
                     </p>
@@ -308,18 +316,24 @@ export const HeroSection = () => {
                 )}
               </div>
 
-              <div className="grid gap-3 border-t border-white/10 bg-slate-950/60 p-5 sm:grid-cols-3">
-                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-                  <div className="text-xs uppercase tracking-[0.2em] text-cyan-300">Focus</div>
-                  <div className="mt-2 text-sm text-slate-200">AI for brain and medical image analysis</div>
+              <div className="grid gap-3 border-t border-border bg-card/70 p-5 sm:grid-cols-3">
+                <div className="rounded-xl border border-border bg-card/70 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-accent">Focus</div>
+                  <div className="mt-2 text-sm text-foreground">
+                    AI for brain and medical image analysis
+                  </div>
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-                  <div className="text-xs uppercase tracking-[0.2em] text-violet-300">Current Role</div>
-                  <div className="mt-2 text-sm text-slate-200">CHRIST University, Delhi-NCR</div>
+                <div className="rounded-xl border border-border bg-card/70 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-violet-600 dark:text-violet-300">
+                    Current Role
+                  </div>
+                  <div className="mt-2 text-sm text-foreground">CHRIST University, Delhi-NCR</div>
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-                  <div className="text-xs uppercase tracking-[0.2em] text-teal-300">Theme</div>
-                  <div className="mt-2 text-sm text-slate-200">Academic portfolio with premium 3D depth</div>
+                <div className="rounded-xl border border-border bg-card/70 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-primary">Theme</div>
+                  <div className="mt-2 text-sm text-foreground">
+                    Academic portfolio with premium 3D depth
+                  </div>
                 </div>
               </div>
             </div>
