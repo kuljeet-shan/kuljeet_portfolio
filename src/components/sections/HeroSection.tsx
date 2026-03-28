@@ -1,167 +1,329 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload } from "@react-three/drei";
+import { Suspense, useMemo, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Float, Html, OrbitControls, Stars } from "@react-three/drei";
+import type { Mesh } from "three";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { AnimatedCounter } from "../AnimatedCounter";
-import { Mail, Award, FileText, Brain, Github, Linkedin, Download } from "lucide-react";
-import { AnimatedText } from "@/components/ui/animated-underline-text-one";
-import { CanvasLoader } from "../canvas/CanvasLoader";
-import { ParticleField } from "../canvas/ParticleField";
-import { FloatingBrain } from "../canvas/FloatingBrain";
+import {
+  Mail,
+  ArrowRight,
+  Download,
+  Github,
+  Linkedin,
+  BookOpen,
+  Globe,
+  UserCircle2,
+} from "lucide-react";
 import { useWebGL } from "@/hooks/use-webgl";
+import cvPdf from "@/assets/CV_Kuljeet.pdf";
 
-const socialLinks = [
-  { icon: <Award className="h-4 w-4" />, label: "Google Scholar", href: "#" },
-  { icon: <FileText className="h-4 w-4" />, label: "ResearchGate", href: "#" },
-  { icon: <Brain className="h-4 w-4" />, label: "ORCID", href: "#" },
-  { icon: <Github className="h-4 w-4" />, label: "GitHub", href: "#" },
-  { icon: <Linkedin className="h-4 w-4" />, label: "LinkedIn", href: "#" },
-];
+type ParticleProps = {
+  count?: number;
+};
+
+function NeuralConstellation({ count = 80 }: ParticleProps) {
+  const points = useMemo(() => {
+    return Array.from({ length: count }, () => ({
+      position: [
+        (Math.random() - 0.5) * 10,
+        (Math.random() - 0.5) * 6,
+        (Math.random() - 0.5) * 6,
+      ] as [number, number, number],
+      scale: 0.03 + Math.random() * 0.06,
+    }));
+  }, [count]);
+
+  return (
+    <group>
+      {points.map((point, index) => (
+        <mesh key={index} position={point.position} scale={point.scale}>
+          <sphereGeometry args={[1, 12, 12]} />
+          <meshStandardMaterial
+            color={index % 3 === 0 ? "#7dd3fc" : index % 3 === 1 ? "#c4b5fd" : "#67e8f9"}
+            emissive={index % 3 === 0 ? "#0ea5e9" : index % 3 === 1 ? "#8b5cf6" : "#0891b2"}
+            emissiveIntensity={0.8}
+            roughness={0.2}
+            metalness={0.7}
+          />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+
+function OrbitRing({ radius = 1.8, y = 0, speed = 0.4 }: { radius?: number; y?: number; speed?: number }) {
+  const ref = useRef<Mesh>(null);
+
+  useFrame((state) => {
+    if (!ref.current) return;
+    ref.current.rotation.z = state.clock.elapsedTime * speed;
+    ref.current.rotation.x = 1.1;
+  });
+
+  return (
+    <mesh ref={ref} position={[0, y, 0]}>
+      <torusGeometry args={[radius, 0.025, 16, 120]} />
+      <meshStandardMaterial color="#7dd3fc" emissive="#38bdf8" emissiveIntensity={1.1} />
+    </mesh>
+  );
+}
+
+function FloatingResearchCore() {
+  const coreRef = useRef<Mesh>(null);
+
+  useFrame((state) => {
+    if (!coreRef.current) return;
+    coreRef.current.rotation.x = state.clock.elapsedTime * 0.35;
+    coreRef.current.rotation.y = state.clock.elapsedTime * 0.55;
+  });
+
+  return (
+    <group>
+      <Float speed={2.1} rotationIntensity={0.9} floatIntensity={1.2}>
+        <mesh ref={coreRef}>
+          <icosahedronGeometry args={[1.15, 1]} />
+          <meshStandardMaterial
+            color="#0f172a"
+            emissive="#7c3aed"
+            emissiveIntensity={1.2}
+            metalness={0.85}
+            roughness={0.15}
+            wireframe={false}
+          />
+        </mesh>
+      </Float>
+
+      <mesh scale={1.45}>
+        <icosahedronGeometry args={[1.15, 1]} />
+        <meshBasicMaterial color="#67e8f9" wireframe transparent opacity={0.22} />
+      </mesh>
+
+      <OrbitRing radius={1.7} speed={0.55} />
+      <OrbitRing radius={2.15} y={0.15} speed={-0.35} />
+      <OrbitRing radius={2.55} y={-0.15} speed={0.25} />
+
+      <Float speed={1.4} floatIntensity={0.9}>
+        <Html position={[0, 2.4, 0]} center>
+          <div className="rounded-full border border-cyan-400/30 bg-slate-950/75 px-3 py-1 text-[11px] font-medium tracking-[0.2em] text-cyan-200 backdrop-blur">
+            AI • MEDICAL IMAGING • HEALTHCARE
+          </div>
+        </Html>
+      </Float>
+    </group>
+  );
+}
+
+function HeroScene() {
+  return (
+    <Canvas camera={{ position: [0, 0, 6], fov: 48 }}>
+      <Suspense fallback={null}>
+        <color attach="background" args={["#020617"]} />
+        <fog attach="fog" args={["#020617", 7, 14]} />
+        <ambientLight intensity={1.1} />
+        <directionalLight position={[4, 4, 3]} intensity={1.7} color="#c4b5fd" />
+        <pointLight position={[-3, -2, 3]} intensity={1.6} color="#67e8f9" />
+        <pointLight position={[3, 2, -2]} intensity={1.2} color="#22d3ee" />
+
+        <Stars radius={55} depth={26} count={1800} factor={3.2} saturation={0} fade speed={0.7} />
+        <NeuralConstellation count={90} />
+        <FloatingResearchCore />
+
+        <OrbitControls
+          enableZoom={false}
+          enablePan={false}
+          autoRotate
+          autoRotateSpeed={0.8}
+          maxPolarAngle={Math.PI / 1.9}
+          minPolarAngle={Math.PI / 2.2}
+        />
+      </Suspense>
+    </Canvas>
+  );
+}
 
 const stats = [
-  { end: 31, suffix: "+", label: "Publications" },
-  { end: 7, suffix: "+", label: "Patents" },
-  { end: 5, suffix: "+", label: "Yrs Research" },
-  { end: 4, suffix: "x", label: "UGC NET" },
+  { value: "31+", label: "Publications" },
+  { value: "7+", label: "Patents" },
+  { value: "4x", label: "UGC NET" },
+  { value: "AI", label: "Healthcare Focus" },
+];
+
+const socialLinks = [
+  {
+    icon: BookOpen,
+    label: "Google Scholar",
+    href: "https://scholar.google.com/citations?user=SUeFXRIAAAAJ&hl=en",
+  },
+  {
+    icon: UserCircle2,
+    label: "Scopus Profile",
+    href: "https://www.scopus.com/authid/detail.uri?authorId=57221031051",
+  },
+  {
+    icon: Globe,
+    label: "ORCID",
+    href: "https://orcid.org/0000-0003-2592-8625",
+  },
+  {
+    icon: UserCircle2,
+    label: "VIDWAN",
+    href: "https://vidwan.inflibnet.ac.in/profile/554218",
+  },
+  {
+    icon: Globe,
+    label: "Web of Science",
+    href: "https://www.webofscience.com/wos/author/record/2062334",
+  },
+  {
+    icon: BookOpen,
+    label: "ResearchGate",
+    href: "https://www.researchgate.net/profile/Kuljeet-Singh-11",
+  },
+  {
+    icon: Github,
+    label: "GitHub",
+    href: "https://github.com/kuljeet-shan",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/kuljeet-singh7/",
+  },
 ];
 
 export const HeroSection = () => {
-  const { supported, isMobile } = useWebGL();
-  const show3D = supported !== false;
+  const { supported } = useWebGL();
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-background">
-      {/* Particle background */}
-      {show3D && (
-        <div className="absolute inset-0 z-0 opacity-40">
-          <Canvas camera={{ position: [0, 0, 10], fov: 60 }} dpr={[1, 1.2]} gl={{ antialias: false, powerPreference: "low-power" }}>
-            <Suspense fallback={null}>
-              <ParticleField count={1800} color="#22d3ee" />
-              <Preload all />
-            </Suspense>
-          </Canvas>
-        </div>
-      )}
+    <section
+      id="home"
+      className="relative overflow-hidden border-b border-border/40 bg-slate-950 text-slate-50"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_30%),radial-gradient(circle_at_left,rgba(139,92,246,0.18),transparent_28%),linear-gradient(to_bottom,rgba(2,6,23,0.95),rgba(2,6,23,1))]" />
+      <div className="absolute inset-0 opacity-30 hero-grid" />
 
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-br from-background via-background/90 to-transparent" />
-      <div className="absolute inset-0 z-[1] neural-pattern opacity-20" />
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500/10 rounded-full blur-[100px] z-[1] animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] z-[1] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 lg:pt-24">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[85vh]">
-
-          {/* Left - Text */}
-          <div className="animate-slide-in-left space-y-5 sm:space-y-7">
-            <div className="flex flex-wrap gap-2">
-              <Badge className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30 hover:bg-cyan-500/20 text-xs px-3 py-1">
-                Assistant Professor & AI Researcher
+      <div className="container relative z-10 mx-auto px-6 py-20 md:py-28">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <Badge className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/10">
+                Assistant Professor • AI Researcher
               </Badge>
-              <Badge className="bg-purple-500/10 text-purple-400 border-purple-500/30 text-xs px-3 py-1">
-                CHRIST University, Delhi-NCR
-              </Badge>
+
+              <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+                Dr. Kuljeet Singh
+              </h1>
+
+              <p className="max-w-2xl text-lg text-slate-300 md:text-xl">
+                Advancing <span className="text-cyan-300">medical imaging</span>,
+                <span className="text-violet-300"> brain healthcare</span>, and
+                <span className="text-teal-300"> AI-driven diagnostics</span> through research,
+                teaching, and real-world academic innovation.
+              </p>
             </div>
 
-            <div>
-              <AnimatedText
-                text="Dr. Kuljeet Singh"
-                className="items-start justify-start"
-                textClassName="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-left mb-0"
-                underlineClassName="text-cyan-400"
-              />
-              <h2 className="mt-3 text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                AI · Medical Imaging · Healthcare Analytics
-              </h2>
-            </div>
-
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xl">
-              Assistant Professor of Computer Science leveraging deep learning to improve
-              diagnosis, prognosis, and risk prediction at the intersection of AI and
-              real-world healthcare systems.
-            </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-4 gap-2 sm:gap-3 py-2">
-              {stats.map((s) => (
-                <div key={s.label} className="relative glass rounded-xl p-3 text-center hover:shadow-glow transition-all group overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-cyan-400">
-                    <AnimatedCounter end={s.end} suffix={s.suffix} />
-                  </div>
-                  <div className="text-[10px] sm:text-xs text-muted-foreground mt-1">{s.label}</div>
+            <div className="grid max-w-2xl gap-4 sm:grid-cols-2 xl:grid-cols-4">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm"
+                >
+                  <div className="text-2xl font-semibold text-white">{stat.value}</div>
+                  <div className="mt-1 text-sm text-slate-300">{stat.label}</div>
                 </div>
               ))}
             </div>
 
-            {/* CTA buttons */}
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-400 hover:to-cyan-500 text-black font-semibold shadow-glow w-full sm:w-auto"
-                onClick={() => document.getElementById("research")?.scrollIntoView({ behavior: "smooth" })}>
-                View Research Portfolio
+            <div className="flex flex-wrap gap-3">
+              <Button
+                size="lg"
+                className="bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+                onClick={() =>
+                  document.getElementById("research")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Explore Research
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button size="lg" variant="outline"
-                className="border-cyan-500/40 hover:bg-cyan-500/10 hover:border-cyan-400 w-full sm:w-auto"
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
-                <Mail className="mr-2 h-4 w-4" />Contact Me
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 bg-white/5 text-white hover:bg-white/10"
+                onClick={() =>
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <Mail className="mr-2 h-4 w-4" />
+                Contact Me
               </Button>
-              <Button size="lg" variant="ghost"
-                className="hover:bg-purple-500/10 w-full sm:w-auto" asChild>
-                <a href="/CV_Kuljeet.pdf" download>
-                  <Download className="mr-2 h-4 w-4" />CV
+
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-violet-400/30 bg-violet-400/10 text-violet-100 hover:bg-violet-400/20"
+              >
+                <a href={cvPdf} target="_blank" rel="noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
                 </a>
               </Button>
             </div>
 
-            {/* Social */}
-            <div className="flex flex-wrap gap-2 pt-2">
-              {socialLinks.map((link, i) => (
-                <a key={i} href={link.href}
-                  className="w-10 h-10 glass rounded-full flex items-center justify-center hover:shadow-glow hover:scale-110 hover:text-cyan-400 transition-all"
-                  aria-label={link.label}>{link.icon}</a>
-              ))}
+            <div className="flex flex-wrap items-center gap-3">
+              {socialLinks.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:border-cyan-300/40 hover:bg-white/10 hover:text-white"
+                  >
+                    <Icon className="h-4 w-4" />
+                    {item.label}
+                  </a>
+                );
+              })}
             </div>
           </div>
 
-          {/* Right - 3D Brain */}
-          <div className="animate-slide-in-right flex justify-center items-center h-[380px] sm:h-[460px] lg:h-[560px]">
-            {show3D ? (
-              <div className="w-full h-full relative">
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-72 h-72 rounded-full bg-cyan-500/10 blur-3xl" />
-                </div>
-                <Canvas camera={{ position: [0, 0, 5], fov: 45 }} dpr={[1, isMobile ? 1 : 2]} gl={{ antialias: !isMobile, alpha: true }}>
-                  <ambientLight intensity={0.4} />
-                  <directionalLight position={[5, 5, 5]} intensity={0.8} />
-                  <Suspense fallback={<CanvasLoader />}>
-                    <FloatingBrain />
-                    <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={isMobile ? 1.5 : 0.5} maxPolarAngle={Math.PI / 1.8} minPolarAngle={Math.PI / 3} />
-                    <Preload all />
-                  </Suspense>
-                </Canvas>
+          <div className="relative">
+            <div className="hero-glow absolute inset-0 rounded-[2rem]" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md">
+              <div className="h-[420px] w-full md:h-[520px]">
+                {supported !== false ? (
+                  <HeroScene />
+                ) : (
+                  <div className="flex h-full flex-col items-center justify-center bg-[radial-gradient(circle,rgba(34,211,238,0.15),transparent_40%),radial-gradient(circle_at_top,rgba(139,92,246,0.18),transparent_30%)] px-8 text-center">
+                    <div className="mb-4 h-28 w-28 rounded-full border border-cyan-300/30 bg-cyan-300/10" />
+                    <h3 className="text-2xl font-semibold">3D research preview</h3>
+                    <p className="mt-3 max-w-md text-slate-300">
+                      This portfolio includes interactive 3D visuals for AI, healthcare analytics,
+                      and academic research themes.
+                    </p>
+                  </div>
+                )}
               </div>
-            ) : (
-              <div className="glass-strong rounded-2xl p-8 text-center space-y-4 max-w-sm w-full">
-                <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center shadow-glow">
-                  <span className="text-5xl font-bold text-white">KS</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Dr. Kuljeet Singh</h3>
-                  <p className="text-sm text-muted-foreground mt-1">Ph.D. · M.Tech IIT Patna</p>
-                </div>
-                <Badge className="w-full justify-center bg-cyan-500/20 text-cyan-400 border-cyan-500/30 py-2">CHRIST University, Delhi-NCR</Badge>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10">
-        <div className="w-6 h-10 border-2 border-cyan-500/40 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-cyan-400 rounded-full mt-2 animate-pulse" />
+              <div className="grid gap-3 border-t border-white/10 bg-slate-950/60 p-5 sm:grid-cols-3">
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-cyan-300">Focus</div>
+                  <div className="mt-2 text-sm text-slate-200">AI for brain and medical image analysis</div>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-violet-300">Current Role</div>
+                  <div className="mt-2 text-sm text-slate-200">CHRIST University, Delhi-NCR</div>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-teal-300">Theme</div>
+                  <div className="mt-2 text-sm text-slate-200">Academic portfolio with premium 3D depth</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
