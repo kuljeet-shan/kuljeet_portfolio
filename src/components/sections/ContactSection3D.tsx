@@ -14,6 +14,7 @@ import {
   Linkedin,
   BookOpen,
   UserCircle2,
+  MessageCircle,
 } from "lucide-react";
 import { useWebGL } from "@/hooks/use-webgl";
 
@@ -77,9 +78,27 @@ function ContactScene() {
 const contactInfo = [
   {
     icon: Mail,
-    label: "Email",
+    label: "Official Email",
     value: "kuljeet@christuniversity.in",
     href: "mailto:kuljeet@christuniversity.in",
+  },
+  {
+    icon: Mail,
+    label: "IEEE Email",
+    value: "kuljeet@ieee.org",
+    href: "mailto:kuljeet@ieee.org",
+  },
+  {
+    icon: Mail,
+    label: "Personal Email",
+    value: "kuljeetshan94@gmail.com",
+    href: "mailto:kuljeetshan94@gmail.com",
+  },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: "+91 8803694182",
+    href: "https://wa.me/918803694182?text=Hi%2C%20Dr.%20Kuljeet%20Singh%2C%20I%20hope%20you%27re%20doing%20well%21",
   },
   {
     icon: MapPin,
@@ -142,38 +161,38 @@ export const ContactSection = () => {
   const { supported } = useWebGL();
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-slate-950 py-20 text-slate-50">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(34,211,238,0.14),transparent_30%),radial-gradient(circle_at_right,rgba(139,92,246,0.14),transparent_30%)]" />
+    <section id="contact" className="relative overflow-hidden bg-background py-20 text-foreground">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(34,211,238,0.08),transparent_30%),radial-gradient(circle_at_right,rgba(139,92,246,0.10),transparent_30%)] dark:bg-[radial-gradient(circle_at_left,rgba(34,211,238,0.14),transparent_30%),radial-gradient(circle_at_right,rgba(139,92,246,0.14),transparent_30%)]" />
       <div className="container relative z-10 mx-auto px-6">
         <div className="mb-12 max-w-3xl">
-          <Badge className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/10">
+          <Badge className="border-accent/30 bg-accent/10 text-accent hover:bg-accent/10">
             Collaboration & Contact
           </Badge>
-          <h2 className="mt-4 text-3xl font-bold md:text-5xl">Get In Touch</h2>
-          <p className="mt-4 text-lg text-slate-300">
+          <h2 className="mt-4 text-3xl font-bold text-foreground md:text-5xl">Get In Touch</h2>
+          <p className="mt-4 text-lg text-muted-foreground">
             Open to collaborations in medical AI, deep learning, academic projects, invited talks,
             and interdisciplinary research partnerships.
           </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md">
+          <div className="overflow-hidden rounded-[2rem] border border-border bg-card/60 shadow-2xl backdrop-blur-md">
             <div className="h-[430px] w-full">
               {supported !== false ? (
                 <ContactScene />
               ) : (
-                <div className="flex h-full items-center justify-center bg-[radial-gradient(circle,rgba(34,211,238,0.15),transparent_35%)] text-center">
+                <div className="flex h-full items-center justify-center bg-[radial-gradient(circle,rgba(34,211,238,0.12),transparent_35%)] text-center">
                   <div>
-                    <div className="mx-auto mb-4 h-28 w-28 rounded-full border border-cyan-300/20 bg-cyan-300/10" />
-                    <h3 className="text-2xl font-semibold">Global collaboration</h3>
-                    <p className="mt-3 max-w-sm text-slate-300">
+                    <div className="mx-auto mb-4 h-28 w-28 rounded-full border border-accent/20 bg-accent/10" />
+                    <h3 className="text-2xl font-semibold text-foreground">Global collaboration</h3>
+                    <p className="mt-3 max-w-sm text-muted-foreground">
                       Available for academic, research, and consulting conversations.
                     </p>
                   </div>
                 </div>
               )}
             </div>
-            <div className="border-t border-white/10 bg-slate-950/60 px-5 py-4 text-sm text-slate-300">
+            <div className="border-t border-border bg-card/70 px-5 py-4 text-sm text-muted-foreground">
               Interactive 3D contact panel inspired by a global research network.
             </div>
           </div>
@@ -184,7 +203,7 @@ export const ContactSection = () => {
               return (
                 <Card
                   key={item.label}
-                  className="rounded-[1.5rem] border-white/10 bg-white/5 p-5 text-slate-50 backdrop-blur-md"
+                  className="rounded-[1.5rem] border-border bg-card/60 p-5 text-card-foreground backdrop-blur-md"
                 >
                   <a
                     href={item.href}
@@ -192,23 +211,23 @@ export const ContactSection = () => {
                     rel="noreferrer"
                     className="flex items-start gap-4"
                   >
-                    <div className="rounded-2xl bg-cyan-400/10 p-3">
-                      <Icon className="h-5 w-5 text-cyan-300" />
+                    <div className="rounded-2xl bg-accent/10 p-3">
+                      <Icon className="h-5 w-5 text-accent" />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-sm text-slate-400">{item.label}</div>
-                      <div className="mt-1 break-words text-base font-medium text-white">
+                      <div className="text-sm text-muted-foreground">{item.label}</div>
+                      <div className="mt-1 break-words text-base font-medium text-foreground">
                         {item.value}
                       </div>
                     </div>
-                    <ExternalLink className="ml-auto h-4 w-4 shrink-0 text-slate-400" />
+                    <ExternalLink className="ml-auto h-4 w-4 shrink-0 text-muted-foreground" />
                   </a>
                 </Card>
               );
             })}
 
-            <Card className="rounded-[1.75rem] border-white/10 bg-white/5 p-6 text-slate-50 backdrop-blur-md">
-              <h3 className="text-xl font-semibold">Academic Profiles</h3>
+            <Card className="rounded-[1.75rem] border-border bg-card/60 p-6 text-card-foreground backdrop-blur-md">
+              <h3 className="text-xl font-semibold text-card-foreground">Academic Profiles</h3>
               <div className="mt-4 flex flex-wrap gap-3">
                 {academicLinks.map((item) => {
                   const Icon = item.icon;
@@ -218,7 +237,7 @@ export const ContactSection = () => {
                       href={item.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/60 px-4 py-2 text-sm text-slate-200 transition hover:border-cyan-300/30 hover:text-white"
+                      className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2 text-sm text-foreground transition hover:border-accent/30 hover:text-foreground"
                     >
                       <Icon className="h-4 w-4" />
                       {item.label}
@@ -228,19 +247,31 @@ export const ContactSection = () => {
               </div>
             </Card>
 
-            <Card className="rounded-[1.75rem] border-white/10 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 p-6 text-slate-50 backdrop-blur-md">
-              <h3 className="text-xl font-semibold">Open to Collaboration</h3>
-              <p className="mt-3 text-slate-300">
-                I welcome opportunities in AI-powered diagnostics, brain healthcare analytics,
+            <Card className="rounded-[1.75rem] border-border bg-gradient-to-br from-cyan-500/10 to-violet-500/10 p-6 text-card-foreground backdrop-blur-md">
+              <h3 className="text-xl font-semibold text-card-foreground">Open to Collaboration</h3>
+              <p className="mt-3 text-muted-foreground">
+                I welcome opportunities in AI-powered diagnostics, brain healthcare analytics, Computational Neuroscience,  
+                Bio-inspired Computing, Cognitive Neuroscience, Image Processing, 
                 publication projects, invited lectures, research mentoring, and interdisciplinary
                 academic initiatives.
               </p>
 
-              <div className="mt-5">
-                <Button asChild className="bg-cyan-400 text-slate-950 hover:bg-cyan-300">
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Button asChild className="bg-primary text-primary-foreground hover:opacity-90">
                   <a href="mailto:kuljeet@christuniversity.in">
                     <Mail className="mr-2 h-4 w-4" />
-                    Send Collaboration Request
+                    Send Email
+                  </a>
+                </Button>
+
+                <Button asChild variant="outline" className="border-border bg-card/50 text-foreground hover:bg-card">
+                  <a
+                    href="https://wa.me/918803694182?text=Hi%2C%20Dr.%20Kuljeet%20Singh%2C%20I%20hope%20you%27re%20doing%20well%21"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    Message on WhatsApp
                   </a>
                 </Button>
               </div>
