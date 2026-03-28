@@ -1,183 +1,283 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload } from "@react-three/drei";
+import { Suspense, useMemo, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Float, OrbitControls, Text } from "@react-three/drei";
+import type { Mesh } from "three";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code2, Database, Monitor, Globe, Brain, Users } from "lucide-react";
+import { Brain, Code2, Database, Globe, Monitor } from "lucide-react";
 import { parseTechnicalSkills, parseDomainExpertise } from "@/lib/cv";
-import { AnimatedText } from "@/components/ui/animated-underline-text-one";
-import { SkillOrb } from "../canvas/SkillOrb";
-import { NeuralNetwork } from "../canvas/NeuralNetwork";
-import { CanvasLoader } from "../canvas/CanvasLoader";
 import { useWebGL } from "@/hooks/use-webgl";
 
-// Skills for 3D orbs
-const orbSkills = [
-  { label: "Python", color: "#22d3ee", position: [-2.5, 1.2, 0] as [number,number,number], speed: 1.2 },
-  { label: "Deep Learning", color: "#a78bfa", position: [2.5, 0.8, 0] as [number,number,number], speed: 0.9 },
-  { label: "TensorFlow", color: "#fb923c", position: [0, 2.0, 0] as [number,number,number], speed: 1.5 },
-  { label: "PyTorch", color: "#f43f5e", position: [-2.2, -1.2, 0] as [number,number,number], speed: 1.1 },
-  { label: "Medical AI", color: "#22d3ee", position: [2.2, -1.0, 0] as [number,number,number], speed: 1.3 },
-  { label: "IoT", color: "#34d399", position: [0.2, -2.0, 0] as [number,number,number], speed: 0.8 },
-];
+type OrbData = {
+  label: string;
+  color: string;
+  position: [number, number, number];
+  speed: number;
+};
+
+function SkillOrb({
+  label,
+  color,
+  position,
+  speed,
+}: OrbData) {
+  const ref = useRef<Mesh>(null);
+
+  useFrame((state) => {
+    if (!ref.current) return;
+    ref.current.rotation.x = state.clock.elapsedTime * speed * 0.4;
+    ref.current.rotation.y = state.clock.elapsedTime * speed * 0.6;
+    ref.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * speed) * 0.12;
+  });
+
+  return (
+    <group position={position}>
+      <Float speed={1.2} floatIntensity={0.6} rotationIntensity={0.6}>
+        <mesh ref={ref}>
+          <sphereGeometry args={[0.62, 48, 48]} />
+          <meshStandardMaterial
+            color={color}
+            emissive={color}
+            emissiveIntensity={0.45}
+            roughness={0.25}
+            metalness={0.75}
+          />
+        </mesh>
+        <Text
+          position={[0, 0, 0.72]}
+          fontSize={0.16}
+          color="#e2e8f0"
+          anchorX="center"
+          anchorY="middle"
+          maxWidth={2}
+        >
+          {label}
+        </Text>
+      </Float>
+    </group>
+  );
+}
+
+function SkillScene({ skills }: { skills: OrbData[] }) {
+  const lines = useMemo(() => {
+    return [
+      [-2.2, 1.2, -1.6],
+      [2.2, 1.0, -1.2],
+      [0, 2.2, -1.8],
+      [-2.0, -1.4, -1.2],
+      [2.1, -1.2, -1.4],
+      [0, -2.1, -1.7],
+    ] as [number, number, number][];
+  }, []);
+
+  return (
+    <Canvas camera={{ position: [0, 0, 6.2], fov: 46 }}>
+      <Suspense fallback={null}>
+        <color attach="background" args={["#020617"]} />
+        <ambientLight intensity={1} />
+        <directionalLight position={[3, 4, 2]} intensity={1.4} color="#93c5fd" />
+        <pointLight position={[-3, -2, 3]} intensity={1.5} color="#c4b5fd" />
+
+        {skills.map((skill) => (
+          <SkillOrb key={skill.label} {...skill} />
+        ))}
+
+        {lines.map((position, index) => (
+          <mesh key={index} position={position}>
+            <sphereGeometry args={[0.06, 16, 16]} />
+            <meshBasicMaterial color="#38bdf8" />
+          </mesh>
+        ))}
+
+        <mesh position={[0, 0, -2.2]} rotation={[0.4, 0.6, 0]}>
+          <torusGeometry args={[3.3, 0.025, 16, 120]} />
+          <meshBasicMaterial color="#1d4ed8" transparent opacity={0.35} />
+        </mesh>
+
+        <mesh position={[0, 0, -2.7]} rotation={[1, 0.2, 0.2]}>
+          <torusGeometry args={[2.5, 0.02, 16, 120]} />
+          <meshBasicMaterial color="#7c3aed" transparent opacity={0.25} />
+        </mesh>
+
+        <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.8} />
+      </Suspense>
+    </Canvas>
+  );
+}
 
 export const SkillsSection = () => {
-  const { supported, isMobile } = useWebGL();
+  const { supported } = useWebGL();
+
   const parsedTech = parseTechnicalSkills();
+  const domainExpertise = parseDomainExpertise().length
+    ? parseDomainExpertise()
+    : [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Medical Image Analysis",
+        "Healthcare Analytics",
+        "Federated Learning",
+        "Meta-Learning",
+        "IoT",
+        "Cybersecurity",
+      ];
 
   const technicalSkills = [
     {
       category: "Programming Languages",
-      icon: <Code2 className="h-5 w-5" />,
-      skills: parsedTech.find((c) => c.category === "Programming")?.skills ?? ["C", "C++", "Java", "C#", "Python"],
-      color: "from-cyan-500/20 to-cyan-600/5",
-      accent: "text-cyan-400",
+      icon: Code2,
+      skills:
+        parsedTech.find((item) => item.category === "Programming")?.skills ?? [
+          "C",
+          "C++",
+          "Java",
+          "C#",
+          "Python",
+        ],
     },
     {
       category: "Databases",
-      icon: <Database className="h-5 w-5" />,
-      skills: parsedTech.find((c) => c.category === "Databases")?.skills ?? ["Oracle", "SQL Server", "MS Access"],
-      color: "from-purple-500/20 to-purple-600/5",
-      accent: "text-purple-400",
+      icon: Database,
+      skills:
+        parsedTech.find((item) => item.category === "Databases")?.skills ?? [
+          "Oracle",
+          "SQL Server",
+          "MS Access",
+        ],
     },
     {
       category: "Operating Systems",
-      icon: <Monitor className="h-5 w-5" />,
-      skills: parsedTech.find((c) => c.category === "Operating Systems")?.skills ?? ["Windows", "Ubuntu", "Linux"],
-      color: "from-blue-500/20 to-blue-600/5",
-      accent: "text-blue-400",
+      icon: Monitor,
+      skills:
+        parsedTech.find((item) => item.category === "Operating Systems")?.skills ?? [
+          "Windows",
+          "Ubuntu",
+          "Linux",
+        ],
     },
     {
       category: "Web Technologies",
-      icon: <Globe className="h-5 w-5" />,
-      skills: parsedTech.find((c) => c.category === "Web Technologies")?.skills ?? ["HTML", "JavaScript"],
-      color: "from-orange-500/20 to-orange-600/5",
-      accent: "text-orange-400",
+      icon: Globe,
+      skills:
+        parsedTech.find((item) => item.category === "Web Technologies")?.skills ?? [
+          "HTML",
+          "JavaScript",
+        ],
     },
   ];
 
-  const domainExpertise = parseDomainExpertise().length
-    ? parseDomainExpertise()
-    : [
-        "Artificial Intelligence", "Machine Learning", "Deep Learning",
-        "Medical Image Analysis", "Healthcare Analytics", "Time-Series Forecasting",
-        "Internet of Things (IoT)", "Blockchain Technology", "Cybersecurity",
-        "Meta-Learning", "Ensemble Methods", "Neural Networks", "Federated Learning",
-      ];
+  const orbSkills: OrbData[] = [
+    { label: "Python", color: "#22d3ee", position: [-2.2, 1.2, 0], speed: 1.2 },
+    { label: "Deep Learning", color: "#8b5cf6", position: [2.2, 1.0, 0], speed: 0.95 },
+    { label: "TensorFlow", color: "#f97316", position: [0, 2.05, 0], speed: 1.05 },
+    { label: "PyTorch", color: "#f43f5e", position: [-2.0, -1.35, 0], speed: 0.85 },
+    { label: "Medical AI", color: "#14b8a6", position: [2.15, -1.15, 0], speed: 1.15 },
+    { label: "IoT", color: "#60a5fa", position: [0, -2.05, 0], speed: 0.78 },
+  ];
 
   return (
-    <section id="skills" className="relative py-20 sm:py-28 overflow-hidden">
-      {/* Neural network background */}
-      {supported && !isMobile && (
-        <div className="absolute inset-0 z-0 opacity-20">
-          <Canvas camera={{ position: [0, 0, 12], fov: 55 }} dpr={[1, 1]} gl={{ antialias: false }}>
-            <Suspense fallback={null}>
-              <NeuralNetwork nodeCount={35} />
-            </Suspense>
-          </Canvas>
-        </div>
-      )}
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12 sm:mb-16">
-          <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/30">Technical Expertise</Badge>
-          <AnimatedText
-            text="Skills & Expertise"
-            className="items-center justify-center"
-            textClassName="text-3xl sm:text-4xl md:text-5xl font-bold"
-            underlineClassName="text-cyan-400"
-          />
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            A blend of technical programming skills, AI research domains, and professional competencies
-            built over years of academic and applied work.
+    <section id="skills" className="relative overflow-hidden bg-slate-950 py-20 text-slate-50">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.14),transparent_25%)]" />
+      <div className="container relative z-10 mx-auto px-6">
+        <div className="mb-12 max-w-3xl">
+          <Badge className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/10">
+            3D Skills & Research Domains
+          </Badge>
+          <h2 className="mt-4 text-3xl font-bold md:text-5xl">Technical Expertise</h2>
+          <p className="mt-4 text-lg text-slate-300">
+            A 3D representation of the tools, platforms, and research areas that define my academic
+            and applied AI work.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-
-          {/* Left — 3D Skill Orbs */}
-          <div className="order-2 lg:order-1">
-            {supported !== false ? (
-              <div className="h-[380px] sm:h-[440px] w-full rounded-2xl overflow-hidden glass border border-cyan-500/10">
-                <Canvas camera={{ position: [0, 0, 7], fov: 50 }} dpr={[1, isMobile ? 1 : 1.5]} gl={{ antialias: !isMobile, alpha: true }}>
-                  <ambientLight intensity={0.5} />
-                  <pointLight position={[5, 5, 5]} intensity={1.2} color="#22d3ee" />
-                  <pointLight position={[-5, -3, -3]} intensity={0.6} color="#a78bfa" />
-                  <Suspense fallback={<CanvasLoader />}>
-                    {orbSkills.map((orb) => (
-                      <SkillOrb key={orb.label} {...orb} />
-                    ))}
-                    <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.4} />
-                    <Preload all />
-                  </Suspense>
-                </Canvas>
-                <p className="text-center text-xs text-muted-foreground pb-3 -mt-8 relative z-10">
-                  Drag to explore · Hover to highlight
-                </p>
-              </div>
-            ) : (
-              <div className="flex flex-wrap gap-3 justify-center">
-                {orbSkills.map((s) => (
-                  <Badge key={s.label} style={{ borderColor: s.color, color: s.color }} variant="outline" className="text-sm px-4 py-2">
-                    {s.label}
-                  </Badge>
-                ))}
-              </div>
-            )}
-
-            {/* Domain Expertise tags */}
-            <div className="mt-6">
-              <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3 flex items-center gap-2">
-                <Brain className="h-4 w-4 text-cyan-400" />Research Domains
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {domainExpertise.map((domain) => (
-                  <Badge
-                    key={domain}
-                    variant="outline"
-                    className="border-muted-foreground/20 hover:border-cyan-400/60 hover:text-cyan-400 hover:bg-cyan-500/5 transition-all text-xs"
-                  >
-                    {domain}
-                  </Badge>
-                ))}
-              </div>
+        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md">
+            <div className="h-[460px] w-full">
+              {supported !== false ? (
+                <SkillScene skills={orbSkills} />
+              ) : (
+                <div className="flex h-full flex-wrap content-center justify-center gap-3 p-10">
+                  {orbSkills.map((skill) => (
+                    <span
+                      key={skill.label}
+                      className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"
+                    >
+                      {skill.label}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="border-t border-white/10 bg-slate-950/60 px-5 py-4 text-sm text-slate-300">
+              Drag and explore the orbiting skills cluster.
             </div>
           </div>
 
-          {/* Right — Technical skill cards */}
-          <div className="order-1 lg:order-2 space-y-4">
-            {technicalSkills.map((cat) => (
-              <Card
-                key={cat.category}
-                className={`p-5 bg-gradient-to-br ${cat.color} border border-border/50 hover:border-cyan-500/30 transition-all group`}
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <span className={cat.accent}>{cat.icon}</span>
-                  <h3 className="font-semibold text-sm">{cat.category}</h3>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {cat.skills.map((skill) => (
-                    <Badge
-                      key={skill}
-                      variant="secondary"
-                      className="text-xs hover:bg-cyan-500/20 hover:text-cyan-400 transition-colors cursor-default"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </Card>
-            ))}
-
-            {/* Professional skills */}
-            <Card className="p-5 border border-border/50 hover:border-purple-500/30 transition-all bg-gradient-to-br from-purple-500/10 to-purple-600/5">
-              <div className="flex items-center gap-3 mb-3">
-                <Users className="h-5 w-5 text-purple-400" />
-                <h3 className="font-semibold text-sm">Professional Skills</h3>
+          <div className="space-y-6">
+            <Card className="rounded-[1.75rem] border-white/10 bg-white/5 p-6 text-slate-50 backdrop-blur-md">
+              <div className="mb-4 flex items-center gap-3">
+                <Brain className="h-5 w-5 text-cyan-300" />
+                <h3 className="text-xl font-semibold">Research Domains</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {["Research Methodology", "Academic Writing", "Mentoring", "Critical Thinking", "Problem Solving", "Communication"].map((s) => (
-                  <Badge key={s} variant="secondary" className="text-xs hover:bg-purple-500/20 hover:text-purple-400 transition-colors cursor-default">{s}</Badge>
+              <div className="flex flex-wrap gap-3">
+                {domainExpertise.map((domain) => (
+                  <span
+                    key={domain}
+                    className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-100"
+                  >
+                    {domain}
+                  </span>
+                ))}
+              </div>
+            </Card>
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              {technicalSkills.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Card
+                    key={item.category}
+                    className="rounded-[1.5rem] border-white/10 bg-white/5 p-5 text-slate-50 backdrop-blur-md"
+                  >
+                    <div className="mb-4 flex items-center gap-3">
+                      <div className="rounded-xl bg-white/10 p-2">
+                        <Icon className="h-5 w-5 text-violet-300" />
+                      </div>
+                      <h4 className="font-semibold">{item.category}</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {item.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1.5 text-sm text-slate-200"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </Card>
+                );
+              })}
+            </div>
+
+            <Card className="rounded-[1.75rem] border-white/10 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 p-6 text-slate-50 backdrop-blur-md">
+              <h3 className="text-xl font-semibold">Professional Strengths</h3>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {[
+                  "Research Methodology",
+                  "Academic Writing",
+                  "Mentoring",
+                  "Problem Solving",
+                  "Curriculum Delivery",
+                  "Communication",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-violet-300/20 bg-violet-300/10 px-4 py-2 text-sm text-violet-100"
+                  >
+                    {item}
+                  </span>
                 ))}
               </div>
             </Card>
