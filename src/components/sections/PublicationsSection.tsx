@@ -366,7 +366,9 @@ export const PublicationsSection = () => {
   const hiddenConferences = conferences.slice(4);
 
   return (
-    <section id="publications" className="py-24 sm:py-32 md:py-40 relative overflow-hidden">
+    <section
+  id="publications"
+  className="py-24 sm:py-32 md:py-40 relative overflow-hidden bg-background text-foreground">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
@@ -374,29 +376,29 @@ export const PublicationsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <Badge className="mb-4 bg-accent/10 text-accent border-accent/20 px-4 py-1">Intellectual Contributions</Badge>
-            <AnimatedText 
-              text={<>Research & <span className="text-gradient-accent">Publications</span></>}
-              textClassName="text-4xl sm:text-5xl md:text-6xl font-black mb-6"
-              underlineClassName="text-accent"
+            <AnimatedText
+  text={<>Research & <span className="text-gradient-accent">Publications</span></>}
+  textClassName="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-foreground"
+  underlineClassName="text-accent"
             />
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground dark:text-slate-300 max-w-3xl mx-auto">
             A comprehensive record of 40+ peer-reviewed contributions across high-impact international journals, conferences, and books.
           </p>
         </div>
 
         <Tabs defaultValue="journals" className="max-w-6xl mx-auto">
           <div className="overflow-x-auto pb-4 mb-8 -mx-4 px-4 scrollbar-hide">
-            <TabsList className="flex w-max mx-auto bg-background/50 border border-accent/10 p-1 h-auto rounded-xl backdrop-blur-sm">
-              <TabsTrigger value="journals" className="px-6 rounded-lg py-3 data-[state=active]:bg-accent data-[state=active]:text-white transition-all">
+            <TabsList className="flex w-max mx-auto bg-card/80 text-foreground border border-border p-1 h-auto rounded-xl backdrop-blur-sm">
+              <TabsTrigger value="journals" className="px-6 rounded-lg py-3 text-foreground/80 data-[state=active]:bg-accent data-[state=active]:text-accent-foreground hover:text-foreground transition-all">
                 Journals ({journals.length})
               </TabsTrigger>
-              <TabsTrigger value="conferences" className="px-6 rounded-lg py-3 data-[state=active]:bg-accent data-[state=active]:text-white transition-all">
+              <TabsTrigger value="conferences" className="px-6 rounded-lg py-3 text-foreground/80 data-[state=active]:bg-accent data-[state=active]:text-accent-foreground hover:text-foreground transition-all">
                 Conferences ({conferences.length})
               </TabsTrigger>
-              <TabsTrigger value="book-chapters" className="px-6 rounded-lg py-3 data-[state=active]:bg-accent data-[state=active]:text-white transition-all">
+              <TabsTrigger value="book-chapters" className="px-6 rounded-lg py-3 text-foreground/80 data-[state=active]:bg-accent data-[state=active]:text-accent-foreground hover:text-foreground transition-all">
                 Book Chapters ({bookChapters.length})
               </TabsTrigger>
-              <TabsTrigger value="authored-books" className="px-6 rounded-lg py-3 data-[state=active]:bg-accent data-[state=active]:text-white transition-all">
+              <TabsTrigger value="authored-books" className="px-6 rounded-lg py-3 text-foreground/80 data-[state=active]:bg-accent data-[state=active]:text-accent-foreground hover:text-foreground transition-all">
                 Books ({authoredBooks.length})
               </TabsTrigger>
             </TabsList>
