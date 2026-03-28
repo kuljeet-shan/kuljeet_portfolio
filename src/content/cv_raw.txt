@@ -1,0 +1,1262 @@
+Research Profiles  Click to open*
+ 
+CURRICULUM VITAE
+ 
+E-mail s: kuljeetshan94@gmail.com
+
+21pcst01.csit@cujammu.ac.in
+
+kuljeet.singh@christuniversity.in
+ 
+Mobile: +91 8803694182  / 9622090294
+ 
+KULJEET SINGH
+
+OBJECTIVES:
+
+ To engage in continuous learning and research, contr ibuting to the advancement of knowledge in
+ 
+my field.
+
+ To inspire and mentor students through innovative teaching methodologies that foster critical
+
+thinking and lifelong learning.
+
+ To prepare students for academic and professional challenges by equipping the m with relevant
+ 
+skills, ethical values, and a global perspective.
+
+EDUCATION:
+
+Degree/Certificate   Institute   Grade / Marks  Session
+ 
+Ph.D.   Central University of Jammu  Pursuing   Feb. 2022  – till date
+ 
+M. Tech.   IIT Patna (CSE)   Pursuing   March 2025  – till date
+ 
+MCA   University of Jammu (CSIT)  7.70 CGPA   2015  – 2018
+ 
+B.Sc.   University of Jammu   61.39 %   2012  – 2015
+ 
+10+2   J&K State Board   68.2 %   2011  – 2012
+ 
+Diploma in Computer
+
+Application (DCA)
+ 
+Shruti Institute of IT &
+
+Management, Kishtwar , J&K
+ 
+87.5 %   2010  – 2011
+ 
+EXAMS QUALIFIED:
+
+National Eligibility Test (NET)   NTA UGC NET   DEC 2020 & JUNE 2021
+ 
+National Eligibility Test (NET)   NTA  UGC NET   JUNE 2020
+ 
+National Eligibility Test (NET)   NTA UGC NET   DEC 2019
+ 
+HP State  Eligibility Test (HP SET)   HP-PSC  SET   NOV 2019
+ 
+National Eligibility Test (NET)   NTA UGC NET   JUNE  2019
+ 
+EMPLOYMENT  HISTORY / CURRENT JOB :
+ 
+1) Assistant Professor  [01-July -2024  – till date ]
+ 
+Department of Computer Science, School of  Sciences, CHRIST (Deemed to be University), Delhi -
+ 
+NCR , 201003  – India .
+ 
+Faculty Profile
+
+2) Doctoral Research Scholar  [February  14, 2022  – till date ]
+ 
+Pursuing  Ph.D.  at Department of Computer Science & IT,  Central University of Jammu , Jammu and
+ 
+Kashmir, 181143  – India.
+ 
+3) Lectu rer (Level of Assistant Professor)  [21-August -2019  – 12-February -2022 ]
+ 
+Lecturer  & In-charge Head, Department of  Computer Science &  IT, Kishtwar Campus, University
+ 
+of Jammu, Kishtwar, J ammu  & Kashmir , 182204  – India.
+ 
+RESEARCH  JOURNAL  PUBLICATIONS  (SCIE, ES CI, Scopus, UGC -Care Listed) :
+ 
+Total Publications  – 31 [SCI- 23, Scopus - 05, UGC -Care listed - 03]
+ 
+1) Amrit Sudershan,  Kuljeet Singh , “GeneRiskCalc: A Web -Based Tool for Genetic Risk Association
+ 
+Analy sis in Case -Control  Studies ”, BMC  Bioinformatics , (ISSN:  1471 -2105 ), (2025)
+ 
+[Communicated,  Springer, Scopus, SCIE,  IF =  2.9, Quartile -Q1]
+ 
+2) Narinder Verma, Gourav Kumar,  Kuljeet Singh *, “A Hybrid Ensemble Framework with Particle
+ 
+Swarm Optimization for Networ k Anomaly Detection”,  Discover Applied Sciences , (ISSN:  3004 -
+ 
+9261 ), (2025)  [Communicated,  Springer, Scopus ]
+ 
+3) Narinder Verma, Neerendra Kumar,  Kuljeet Singh , “A novel univariate feature selection with
+ 
+ANOVA F -test based machine learning model for Intrusion D etection Framework of Robotics
+ 
+system”  International Journal of Computational Intelligence Systems , (ISSN:  1875 -6883 ), (2025)
+ 
+[Communicated,  Springer, Scopus, SCIE,  IF =  2.5, Quartile -Q2]
+ 
+4) Karan Dixit, Anurag Sinha,  Kuljeet Singh * et al. “ Exploring the impa ct of social media on shaping
+ 
+collective value perceptions and motivations for electric vehicle adoption ” OPSEARCH , (ISSN:
+ 
+0975 -0320 ), (2025)  [Communicated,  Springer, Scopus,  IF =  1.4, Quartile -Q2]
+ 
+5) Santhosh Kumar G , Anurag Sinha,  Kuljeet Singh * et al. “ Breast Cancer Prediction Using Self
+ 
+Adaptive -Sea Lion Optimization based Recurrent Neural Network product ” Evolving Systems ,
+ 
+(ISSN:  1868 -6486 ), (2025)  [Communicated,  Springer , Scopus,  SCIE, IF =  2.7, Quartile -Q2]
+ 
+6) Khushi Sharma , Manjula Shanbhog,  Kuljeet Singh *, “Machine Learning in Neuroimaging and
+ 
+Computational Pathophysiology of Parkinson’s Disease: A comprehensive review and meta -
+ 
+analysis ” Clinical Neurology and Neurosurgery , (ISSN:  1872 -6968 ), (2025)  [Communicated,
+ 
+Elsevier, Scopus,  SCIE, IF =  1.8, Quartil e-Q2]
+ 
+7) Anurag Sinha,  Kuljeet Singh  et al. “ RAG -Descriptor Enhanced Secure Cloth Recommendation
+ 
+System: A Hybrid Algorithm and Explainable AI -Driven Content -Based Image Retrieval (CBIR)
+ 
+Framework ” Journal of Intelligent Systems , (ISSN:  2191 -026X ), (2025)  [Communicated,  DE
+ 
+GRUYTER , Scopus, E SCI, IF =  2.1, Quartile -Q3]
+ 
+8) Deepti Nayak, Manjula Shanbhog,  Kuljeet Singh *, “Clinical Insights into Neuroimaging and AI -
+ 
+Driven Techniques in Alzheimer’s disease: A Systematic Review and Meta -Analysis”  Journal of
+ 
+Clinical N euroscience , (ISSN:  1532 -2653 ), (2025)  [Communicated,  Elsevier, Scopus,  SCIE, IF =
+ 
+1.9, Quartile -Q2]
+ 
+9) Khushi Mogha, Neha Saini,  Kuljeet Singh *, “Neuroimaging and AI -Driven Approaches in Autism
+ 
+Spectrum Disorder: A Systematic Review of Emerging Diagnostics a nd Therapeutics” , Discover
+ 
+Applied Sciences , (ISSN:  3004 -9261 ), (2025)  [Communicated,  Springer , Scopus ]
+
+10) Cheshta Nagpal,  Kuljeet Singh *, “A Systematic Review of Brain Imaging Studies to Mitigate
+ 
+Schizophrenia Risk: Insights from the Past to Shape the Future ” Psychiatry Research , (ISSN:  1872 -
+ 
+7123 ), (2025)  [Communicated,  Elsevier , Scopus, SCI E, IF = 4.2,  Quartile -Q1]
+ 
+11) Surbhi Gu pta, Kuljeet Singh *, et al. , “Effective Detection of Covid -19 using Xception Net
+ 
+Architecture:   A  Technical   Investigation   using   X-ray  Images”
+ 
+Health Informatics Journal , (ISSN:  1741 -2811 ), (2024 ) [Communicated,  SAGE Journals , Scopus,
+ 
+SSCI, IF =  2.2]
+ 
+12) Kuljeet Singh *, Amrit Sudershan, et al., “ BC-MBINet: A Novel Architecture for Accurate
+ 
+Classification of Breast Cancer with Microscopic Biopsy  Images using Deep Convolutional Neural
+ 
+Networks ” International Journal of Pattern Recognition and Artificial Intelligence  (ISSN:  1793 -
+ 
+6381 ), (2022)  [Communicated,  World Scientific, Scopus, SCIE, IF = 1.261 ]
+ 
+13) Kuljeet Singh *, Anubha Gaur,  et al.,  “Deep CP -CXR: A Deep Learning Model for Classification of
+ 
+Covid -19 and Pneumonia Disease using Chest X -ray Images ” Annals of Data Science , (ISSN:  2198 -
+ 
+5812 ), (2024 ) https://doi.org/10.1007/s40745 -025-00601 -3 [Published , Springer , Scopus ,
+ 
+Quartile -Q1]
+ 
+14) Kuljeet Singh , Agar Chander Pushap,  et al., “ COVID -19 changed our world: A  systematic review ”
+ 
+Global   Health   Economics   and  Sustainability ,  (ISSN:   2972 -4570 ),  (2024)
+ 
+https://doi.org/10.36922/ghes.3992  [Published, Crossref ]
+ 
+15) Kuljeet Singh *, Deepti Malhotra, “ IRAM –NET Model: Image Residual Agnostics Meta Learning
+ 
+based Network for Rare De Novo Glioblastoma Diagnosis ” Neural Computing and Applications,
+ 
+(ISSN:  1433 -3058 ), (2024 ) https://doi.org/ 10.1007/s00521 -024-10347 -3 [Accepted , Springer,
+ 
+Scopus,  IF =  4.5, Quartile -Q1]
+ 
+16) Amrit Sudershan,  Kuljeet Singh , et al., “A comprehensive investigation of risk association between
+ 
+the -786 T> C, +884 G > A, VNTR, rs743506, rs3918226 of eNOS and susceptibility of migraine:
+ 
+A updated meta -analysis utilizing Trial Sequential  Analysis”  Journal of Molecular Neuroscience ,
+ 
+(ISSN:  1559 -1166),  73: 956–975 (30 Oct 2023 ) https://doi.org/10.1007/s12031 -023-02167 -2
+ 
+[Accepted, Sp ringer, Scopus, SCIE, IF = 3.1, Quartile -Q2]
+ 
+17) Kuljeet Singh *, Sourabh Shastri, et al., “ BC-NET: Ear ly Treatment of Breast Cancer using Nested
+ 
+Ensemble Technique of Machine Learning ” Automatic Control and Computer Sciences , (ISSN:
+ 
+1558 -108X ), 57: 646–659 (27 Nov  2023 ) https://doi.org/10.3103/S01464 11623060093  [Accepted,
+ 
+Springer, Scopus, ESCI , IF = 0.9 , Quartile -Q3]
+ 
+18) Kuljeet Singh *, Deepti Malhotra, “Meta -Health: Learning -to-learn (Meta -Learning) as a Next
+ 
+Generation of Deep Learning Exploring Healthcare Challenges and Solutions for Rare Disorders:  A
+ 
+Systematic Analysis”  Archives of Computational Methods in Engineering,  (ISSN:  1886 -1784 ),
+ 
+30: 4081 –4112  (29 April  2023 ) https://doi.org/10.1007/s11831 -023-09927 -8 [Accepted, Springer,
+ 
+Scopus, SC IE, IF =  9.7, Quartile -Q1]
+ 
+19) Sourabh Shastri,  Sachin  Kumar, Shilpa Mahajan,  Kuljeet Singh , et al.  “LiteCovidNet:  A
+ 
+Lightweight Deep Neural Network Model for detection of COVID -19 using X -ray Images ”
+ 
+International Journal of Imaging Systems and Technology , (ISSN:  1098 -1098 ), 32( 5): 1464 - 1480
+ 
+(11 June  2022 ) https://doi.org/10.1002/ima.22770  [Accepted,  Wiley, Scopus, SCIE, IF =  3.3,
+ 
+Quartile -Q2]
+
+20) Amrit  Sudershan , Kanak  Mahajan , Kuljeet  Singh , et al. , “The Comple xities of Migraine: A Debate
+ 
+Among Migraine Researchers: A Review ” Clinical Neurology and Neurosurgery , (ISSN: 0303 -
+ 
+8467 ), 214:  107136  (19 Jan  2022).  https://doi.org/10.1016/j.clineuro.2022.1071 36 [Accepted,
+ 
+Elsevier, Scopus, SCI E, IF = 1 .9, Quartile -Q2]
+ 
+21) Sourabh Shastri, Isha Kansal, Sachin Kumar,  Kuljeet Singh , et al.,  “CheXImageNet: A Novel
+ 
+Architecture for Accurate Classification of Covid -19 with Chest X -ray Digital Images using Deep
+ 
+Convolut ional Neural Networks”  Health and  Technology  (ISSN:  2190 -7196) , 12:193 –204 (11 Jan
+ 
+2022 ). https://doi.org/ 10.1007/s12553 -021-00630 -x [Accepted,  Springer, Scopus, ESCI , IF = 2.5 ,
+ 
+Quartile -Q3]
+ 
+22) Kuljee t Singh *, Sachin Kumar,  et al.,  “Black Fungus Immunosuppressive Epidemic with Covid -19
+ 
+Associated Mucormycosis (Zygomycosis): A Clinical and Diagnostic Perspective from India”
+
+Immunogenetics  (ISSN:  1432 -1211 ), 74, 197–206 (01 Oct  2021 ). https://doi.org/10.1007/s00251 -
+ 
+021-01226 -5 [Accepted,  Springer, Scopus, SCI E, IF = 3. 2, Quartile -Q3]
+ 
+23) Sourabh Shastri,  Kuljeet Singh *, et al.,  “CoBiD -Net: A Tailored Deep Learning Ensemble Model
+ 
+for Time Series Foreca sting of Covid -19” Spatial Information Research  (ISSN: 2366 -3294), 30, 9–
+ 
+22 (12 June  2021).  https://doi.org/10.1007/s41324 -021-00408 -3 [Accepted,  Springer,  Scopus,
+ 
+ESCI , IF = 2.4 , Quartile -Q2]
+ 
+24) Sour abh Shastri,  Kuljeet Singh , et al.,  “NestEn_S mVn: boosted nested ensemble multiplexing to
+ 
+diagnose coronary artery disease ” Evolving Systems  (ISSN: 1868 -6486), 13, 281 –295 (22 May
+ 
+2021)  https://doi. org/10.1007/s12530 -021-09384 -3. [Accepted,  Springer,  Scopus,  SCIE , IF =  3.2,
+ 
+Quartile -Q2]
+ 
+25) Sourabh Shastri,  Kuljeet Singh , et al.,  “Time series forecasting of Covid -19 using deep learning
+ 
+models: India -USA comparative case study”  Chaos, Solitons and Fract als (ISSN:  0960 -0779 ), 140:
+ 
+110227 ( 20 Aug  2020 ) https://doi.org/10.1016/j.chaos.2020.110227 . [Accepted,  Elsevier,  Scopus,
+ 
+SCIE, IF =  7.8, Quartile -Q1]
+ 
+26) Sourabh Shastri, Paramjit Kour, Sachin Kum ar, Kuljeet Singh , et al.,  “A nested stacking ensemble
+ 
+model for predicting districts with high and low maternal mortality ratio (MMR) in India”
+
+International Journal of Information Technology , (ISSN: 2511 -2112) , 13(2):433 –446 (22 Nov
+ 
+2020)  https://doi.org/10.1007/s41870 -020-00560 -3. [Accepted,  Springer, Scopus , Quartile -Q2]
+ 
+27) Sourabh Shastri,  Kuljeet Singh , et al.,  “Deep -LSTM Ensemble Framework to Forecast Covid -19:
+ 
+An Insight to the Global Pandemi c” International Journal of Information Technology , (ISSN: 2511 -
+ 
+2112) , 13(4):1291 –1301  (03 Jan 2021 ) https://doi.org/10.1007/s41870 -020-00571 -0. [Accepted,
+ 
+Springer, Scopus , Quartile -Q2]
+ 
+28) Sourabh Sh astri, Paramjit Kour, Sachin Kumar,  Kuljeet Singh , et al.,  “GBoost: A novel Grading -
+ 
+AdaBoost Ensemble approach for automatic identification of Erythemato -Squamous Disease”
+ 
+International Journal of Information Technology , (ISSN: 2511 -2112) , 13(3):959 –971 (23 Nov
+ 
+2020)  https://doi.org/10.1007/s41870 -020-00589 -4. [Accepted,  Springer, Scopus , Quartile -Q2]
+ 
+29) Kuljeet Singh , Sourabh Shastri,  et al.,  “Implementation of Exponential Smoothing for Forecasting
+ 
+Time Series Data” , International Journal of Scientific Research in Computer Science Applications
+ 
+and Management Studies , (ISSN: 2 319-1953 ), 8(1),  (01 January 2019 ). [Accepted,  UGC -CARE
+ 
+List (India) ]
+
+30) Arun Singh Bhadwal, Sourabh Shastri, Paramjit Kour, Sachin  Kumar,  Kuljeet Singh , et al.,
+ 
+“Performance Evaluation of ANN Classifier for Knowledge Discovery in Child Immunization
+
+Databases”,  International  Journal of Computational Engineering Research (IJCER) , (ISSN (e):
+ 
+2250  – 3005 ), 9(3),  March – 2019.  [Accepted,  UGC-CARE List (India) ]
+ 
+31) Paramjit  Kour, Sourabh Shastri, Arun  Singh Bhadwal, Sachin Kumar,  Kuljeet Singh , et al.,
+ 
+“Classification of Maternal Healthcare Data using Naïve Bayes”,  International  Journal of Computer
+ 
+Sciences  and Engineering , (E-ISSN:  2347 -2693), 7(3), 388-394 (31 Mar  2019 )
+ 
+https://doi.org/10.26438/ijcse/v7i3.388394 . [Accepted,  UGC -CARE List (India) ]
+ 
+CONFERENCE PAPERS PUBLISHED / SUBMITTED :
+ 
+1) Deepti Nayak,  Kuljeet Singh *, “Evaluating the Effi cacy of AI and Machine Learning Models for
+ 
+Early Alzheimer's Disease Detection Using Multi -Modal Data ” International Conference on Data
+ 
+Mining and Information Security ( ICDMIS -2025), Organized by Eminent College  of Management
+ 
+and Technology, West Bengal,  Springer Nature LNNS Book Series  held on 7 th – 8th October 2025 .
+ 
+[Submitted ] [Scopus Indexed]
+ 
+2) Khushi Mogha, Neha Saini,  Kuljeet Singh *, “Weather Prediction Using Hybrid Machine Learning
+ 
+Models:  ML-based  Comparative  Analysis ”, International  Conference  on Data Mining  and
+ 
+Information  Security  (ICDMIS -2025), Organized  by Eminent  College  of Management  and
+ 
+Technology, West Bengal,  Springer Nature LNNS Book Series  held on 7 th – 8th October 2025 .
+ 
+[Submitted ] [Scopus Indexed]
+ 
+3) Cheshta Nagpal, Neha Saini,  Kuljeet Sin gh*, “AI-Driven Approaches and Brain Function Advances
+ 
+in Schizophrenia Research: A Systematic Review ”, International Conference on NextGen Data
+ 
+Science and Analytics (ICNDSA -2025) , Organized by CHRIST (Deemed to be University), Delhi -
+ 
+NCR,  Springer Nature  Lecture Notes in Networks and Systems  Book Series  held on 12 th April 2025 .
+ 
+[Accepted ] [Scopus Indexed]
+ 
+4) Yuvika Singh, Manjula Shanbhog,  Kuljeet Singh *, “Analyzing the Diagnosis and Treatment of
+ 
+Astrocytoma,  Oligodendroglioma  and Glioblastoma:  A Systematic  Review”,  International
+ 
+Conference on AI Systems and Sustainable Technologies , Organised by IIS (Deemed to be
+ 
+University), Jaipur  Springer Nature  Lecture Notes in Networks and Systems  Book Series  held on
+ 
+28th – 29th March 2025 . [Accepted ] [Scopus Indexed]
+ 
+5) Kuljeet Singh *, Deepti Malhotra, “ Meta -Learning based efficient framework for diagnosing rare
+ 
+disorders:  A comprehensive  survey ”, International  Conference  on Intelligent  and Smart
+ 
+Computation  (ICIASC -2023)  AIP Conf.  Proc.  19 March  2024;  3072  (1): 040003.
+ 
+https://doi.org/10.1063/5.0199881  [Published ] [Scopus Indexed]
+ 
+6) Jaffar Amin Chacket, Deepti Malhotra,  Kuljeet Singh , “M tL-RODD: Meta Learning Based Rare
+ 
+Ophthalmic  Disorders  Diagnosis  Framework:  A Systematic  and Comparative  Analysis”
+ 
+International Conference On Data Analytics and Insights (ICDAI -2024) , Organized by Department
+ 
+of Computer Science and Engineering, Techno International New Town, Kolkata, Springer Nature
+
+LNNS Book Series.  [Accepted ] [Scopus Index ed]
+ 
+7) Kuljeet Singh *, Deepti Malhotra, “Meta -Learning Based System for the Early Diagnosis of Rare
+ 
+Glioblastoma Diseases: A Comprehensive Analysis”,  International Conference on Data Mining and
+ 
+Information  Security  (ICDMIS -2024 ), Organized  by Eminent  College  of Management  and
+
+Technology, West Bengal,  Springer Nature LNNS Book Series  held on 7 th – 8th October 2024 .
+ 
+[Accepted ] [Scopus Indexed]
+ 
+BOOK CHAPTERS PUBLISHED / ACCEPTED :
+ 
+1) Sourabh Shastri,  Sachin Kumar, Kuljeet Singh, Vibhakar Mansotra  “En -Fuzzy -ClaF: A M achine
+ 
+Learning  based  Stack -Ensembled  Fuzzy  Classification  Framework  for Diagnosing
+ 
+Coronavirus ”, ‘Society 5.0 and the Future of Emerging Computational Technologies: Practical
+ 
+Solutions, Examples, and Case Studies’  CRC Press, Taylor & Francis Group, USA , eBook ISBN -
+ 
+9781003184140 , 2022,  https://doi.org/10.1201/9781003184140 .
+ 
+2) Sourabh Shastri,  Sachin Kumar, Kuljeet Singh, Vibhakar Mansotra “ Designing Contactless
+ 
+Automated Systems using IoT, Sensors and A rtificial Intelligence to mitigate COVID -19”,
+ 
+‘Internet of Things’  CRC Press, Taylor & Francis Group, US A, eBook ISBN - 9781003219620,
+ 
+2022,  http://dx.doi.org/10.1201/9781003219620 -13.
+ 
+3) Sourabh Shast ri, Kuljeet Singh, Astha Sharma, Mohamed Lounis, Sachin Kumar, and Vibhakar
+ 
+Mansotra  “Convolutional bi -directional long -short -term -memory based model to forecast
+ 
+COVID -19 in Algeria”  ‘Computational Intelligence in Healthcare Applications ’ Academic Press ,
+ 
+ISBN: 9780323990318,  P.331 -343, 2022,  https://doi.org/10.1016/B978 -0-323-99031 -8.00003 -X.
+ 
+BOOK’S AUTHORED / PUBLISHED :
+ 
+1) Shashank Kulkarni,  Kuljeet Singh , “Mera Gaon  : Mere Prerna Srot ”, High brow Publication,  2023,
+ 
+ISBN: 978 -81-961981 -2-1. ["Mera Gaon: Mere Prerna Srot,"  is a captivating non -fiction book that
+ 
+explores rural India and highlights the unrecognized  and unsung heroes  who have made significant
+ 
+impacts on  our societies. ]
+ 
+PATENTS PUBL ISHED / SUBMITTED :
+ 
+S.
+
+No. Title  of the  Patent   Country  Patent / Application
+ 
+Number   Status
+ 
+1.
+ 
+A System and Method For MRI -Based
+ 
+Prediction   and  Diagnosis   of
+ 
+Neurodegenerative Disorders
+ 
+India n  202411078609   Published -
+ 
+Without Grant
+ 
+2.
+ 
+Metal -learning  System  for Early
+ 
+Glioblastoma  Detection  in Rare
+ 
+Disorder Diagnostics
+ 
+Indian   202411056010   Published -
+ 
+Without Grant
+ 
+3.  A Wireless Interactive  IOT Service
+ 
+Robots For Smart Home   Indian   202141003260   Published -
+ 
+Without Grant
+ 
+4.  E-Commerce  Sales  Prediction  And
+ 
+Boosting Using  Machine Learning   Australian  2021100668   Published -
+ 
+With Grant
+ 
+5.  Hybrid  Drone  For Smart  Logistics
+ 
+Using IOT   Indian   2020111009854   Published -
+ 
+Without Grant
+ 
+6.  Smart Logistics Transportation Using
+
+Blockchain Technology   Australian  2021102481   Published -
+ 
+With Grant
+ 
+7.  Autonomous  Weed  Detection  and
+ 
+Removal Robot
+ 
+Indian
+
+Design   Submitted   With Grant
+
+8.  Advanced   Neuro -Regenerative
+ 
+Implant Device
+ 
+Indian
+
+Design   Submitted   With Grant
+ 
+WORKING AS AN EDITOR / REVIEWER IN JOURNALS / CONFERENCES :
+ 
+RESEARCH AWARDS / RECOGNITIONS :
+ 
+1) Our work  published in  ‘International Jour nal of  Imaging Systems and Technology ’ Wiley , (ISSN:
+ 
+1098 -1098 , Scopus, SCIE, IF = 3.3,  Quartile -Q2 journal)  has received  maximum  downloads  to
+ 
+rank within the top 10% of papers published  in 2022.
+ 
+2) Got an  Appreciation M edal  in the  “1st Maharathi Open International FIDE Rapid Chess
+ 
+Tournament 2025 ” organised by  “All India Chess Federation ” in Delhi -NCR  on 12-13 April 2025.
+ 
+GUEST EDITOR / NEWSPAPER ARTICLE S / SPECIAL ISSUES :
+ 
+S.
+
+No  Role   Name of the Journal   ISSN  Number   Publisher
+ 
+1.  Editor   Journal of Research in Diabetes &
+
+Metabolism   2640 -5547   SciRes Literature
+ 
+2.  Academic
+
+Editor   Journal of Biomed Research   2693 -5910   ProBiologists
+ 
+3.  Editor   Machine Learning in Engineering
+
+And Technology   7977 -1309   ReseaPro Journals
+ 
+4.  Reviewer   Acta Scientific Computer Sciences   Acta Scientific  Acta Scientific
+ 
+1.
+ 
+Peer
+
+Reviewing
+
+For Journal s 
+(Web of Science
+ResearcherID
+AAW-8363-2020)
+
+IEEE Communications Magazine   1558 -1896   IEEE
+ 
+2.  Computers in Biology and Medicine   0010 -4825   Elsevier
+ 
+3.  Health Sciences Review   2772 -6320   Elsevier
+ 
+4.  PeerJ   2167 -8359   PeerJ
+ 
+5.  New Generation Computing   1882 -7055   Springer
+ 
+6.  BMC Medical  Informatics and
+ 
+Decision Making   1472 -6947   Springer
+ 
+7.  Scientific Reports   2045 -2322   Springer Nature
+ 
+1.
+ 
+Peer
+
+Reviewing
+
+For
+ 
+Conferences
+ 
+IEEE  International  Conference  on
+ 
+Computing,  Communication,  and
+ 
+Intelligent   Systems ,  Sharda
+ 
+University, UP, India.
+ 
+ISBN: 978 -1-
+ 
+6654 -6200 -6 IEEE
+ 
+2.
+ 
+International   Conference   on
+ 
+Advancement  in Computation  &
+ 
+Computer   Technologies,   2023
+ 
+(InCACCT -2023) ,  Chandigarh
+ 
+University,  Punjab, India.
+ 
+IEEE Conf.
+
+Record No:
+
+57535X
+ 
+IEEE
+ 
+3.
+ 
+International Conference on Recent
+
+Development s in Cyber Security
+ 
+(ReDCySec -2023), Center for Cyber
+ 
+Security and Cryptology, Sharda
+
+University, UP, India.
+ 
+Ref No.
+
+SU/CCS&C/R
+
+eDCySec -
+ 
+23/079
+ 
+Springer LNNS
+
+series  Indexed in
+ 
+Scopus
+
+1) Article in State Times newspaper titled  “Kuljeet shines at 1 st Maharathi Open International
+ 
+FIDE   Rapid   Chess   Tournament   2025”   on  15th  April   2025.
+ 
+[https: //epaper.statetimes.in/archives.aspx?date1=4/15/2025&page=7 ]
+ 
+2) Article in Rising Kashmir newspaper titled  “Deepfake Technology: An Escalating Threat to the
+ 
+General  Public ” on 24th October  2024.  [https://risingkashmir.com/deepfake -technology -an-
+ 
+escalating -threat -to-the-general -public/ ]
+ 
+3) Article in Daily Excelsior newspaper titled  “Kuljeet selected for International Chess C’ship”  on
+ 
+18th December  2024.  [https://www.dailyexcelsior.com/kuljeet -selected -for-international -chess -
+ 
+cship/ ]
+ 
+CONFERENCES / WORKSHOPS / UGC MM -TTP FDP’S / PROJECTS  ATTENDED:
+ 
+1) Completed the  NEP  2020 Orientation & Sensitization Programme  under the Malaviya Mission
+ 
+Teacher Training Programme  (MM -TTP)  of the University Granta Commission  (UGC)  organized
+ 
+by Central University of Jammu from  20th January 2025  to 29th January 2025 . [Certificate ]
+ 
+2) Completed the  NEP 2020 Orientation & Sensitization Programme  under the Malaviya Mission
+ 
+Teacher Training Programme  (MM -TTP)  of the University Granta Commission  (UGC)  organized
+ 
+by Central University of Jammu from  5th August 2024 to 14 th August 2024 . [Certificate ]
+ 
+3) Completed the  Faculty Induction Program (Gurudakshita ) under the Malaviya Mission Teacher
+ 
+Training Programme  (MM -TTP)  of the University Granta Commission  (UGC)  organized by
+ 
+Central University of Jammu from  23rd September 2024 to 22 nd October 2024 . [Certificate ]
+ 
+4) Participated  and presented a  research  paper in the  “International Conference on Intelligent and
+ 
+Smart Computation (ICIASC -2023)”  organized by the Department of Comp uter Science and
+ 
+Engineering,  Chandig arh University, Mohali, Punjab, India on  07-08 July 202 3. [Certificate ]
+ 
+5) Worked as a  Field Investigator  in the project titled  "A Study of Impact of Constit utional Status
+ 
+of Jammu and Kashmir on Status of Marginalised Communities  since  Independence" (F. No
+ 
+SC-17/2019 -2020/1CSSR/RP)  sponsored by the Indian Council for Social Science Research
+ 
+(ICSSR) located in the Department of Political Science, Ramjas Colleg e, University of Delhi.
+ 
+[Certificate ]
+ 
+6) Participated  in the  “5th International Conference on Recent Innovation in Computing (ICRIC -
+ 
+2022)”  organized by the D epartment of Computer Science & IT, Central University of Jammu on
+ 
+16-17 May 2022.  [Certificate ]
+ 
+7) Participated  5 days International Research workshop on  "Computational Intelligence Methods" ,
+ 
+held during  19th  - 23rd August, 2022 , organized  by Maharishi University of Information
+ 
+Technology, Noida in collaboration with Adonic Informatics.
+
+8) Participated in SERB Funded Five -Day National e -Workshop on  “Medical Imag e Analysis using
+ 
+Artificial Intelligence (MIAAI2022)”  jointly organized by the Center  for Medical Imaging Studies
+ 
+(CMIS) under Department of Electronics and Communication Engineering, Gayatri Vidya Parishad
+
+College of Engineering (Autonomous), Visakhapatna m, in collaboration with Sankar Foundation
+ 
+Eye Hospital and Institute, Visakhapatnam during  25th to 29th April, 2022 .
+
+9) Participated and Presented paper on  “Predictive Analysis of Time Series Data ” in Two Day
+ 
+National  Conference  on “Emerging  Trends  in Advanc ed Computing  and Information
+ 
+Technology (ETACIT -2k18)”  at Department of Computer Science and IT, Kathua Campus,
+ 
+University of Jammu, Kathua on  February 24 -25, 2018 .
+ 
+10) Participated and Presented paper on  “Study of Time Series Forecasting Using Exponential
+ 
+Smo othing”  in National Conference on  “Emerging Trends in Management, Economics & IT”
+ 
+organized by Institute of  Management Sciences (IMS) , Gurha  Brahamana  (Patoli), Akhnoor Road ,
+ 
+Jammu on  May 05, 2017 .
+ 
+11) Organized Two Day National Conference on  “Recent Trends  and Technologies In Data Science
+ 
+And Artificial Intelligence (NCTDA -2016)”  as Organizer at ‘Department of Computer Science
+ 
+and IT, Bhaderwah Campus, University of Jammu, Bhaderwah’ on 26 th Aug  – 27th Aug, 2016.
+ 
+SEMINARS  / WORKSHOPS ORGANIZED:
+ 
+1) Organised an  Expert Talk on  “IPR and Research Ethics ” at the Department of Computer Science,
+ 
+School of Sciences, Christ University, Delhi -NCR on  28th March 2025 . [Official Report ]
+ 
+2) One-week FDP titled “ Recent Trends in Security: IoT, Blockchain, and Cyber Security (RTS
+ 
+2022) ” has been organized as a member of the organizing commit tee at  the Central University of
+ 
+Jammu from 19 th - 23rd September 2022. [ Certificate ]
+ 
+3) Organised a Webinar on  “Lifelong Learning Skills”  as Organising Secr etary at  the Department of
+ 
+Computer Science & IT, Kishtwar Campus, University of Jammu, Kishtwar , on Monday,  12th July
+ 
+2021 . [Certificate ]
+ 
+4) Organised one w eek National  Level  E-Quiz  on “Big  Data Systems”  (NLQBDS -2k20)  as
+ 
+Organising Secretary at the Department of Computer Science & IT, Kishtwar Campus, University
+
+of Jammu, Kishtwar on  30th May  – 05th June 2020 . [Certificate ]
+ 
+INVITED AS KEYNOTE SPEAKER / RESOURCE PERSON / GUEST LECTURES :
+ 
+1) Invited as a  Keynote Speaker  on the topic “Transforming Healthcare using Artificial Intelligence”
+ 
+at the International Conferenc e on Artificial Intelligence held on  22nd February 2025 in San Jose,
+ 
+California, USA.  [Website ] [Certificate ]
+ 
+2) Invited as a  Resource Person  on the topic “Digital Literacy and Skill Building for Rural Women
+ 
+Entrepreneurs” under the project titled ‘Accelerating Women Entrepreneurship in Rural India:
+
+Towards  Digital Empowerment for Self Reliance and Gender Equality’ funded by  UNESCO at
+ 
+Central University of Jammu  on August 2 nd – August 3 rd, 2023 . [Certificate ]
+ 
+3) Invited as a  Resource Person  in the motivational seminar on “Engineers for Vishwaguru Bharat”
+ 
+organized by the University Institute of Engineering and Technology (UIET), Kathua Campus,
+
+University of Jammu, in collaboration with Students for Holistic Devel opment of Humanity
+ 
+(SHoDH) , on Friday,  September 15, 2023 . [Certificate ]
+ 
+4) Invited as a  Resource Person  on the topic “Digital Literacy and Skill Building fo r Rural Women
+ 
+Entrepreneurs” under the project titled ‘Accelerating Women Entrepreneurship in Rural India:
+
+Towards Digital Empowerment for Self Reliance and Gender Equality’ funded by UNESCO for
+
+Women Entrepreneurs of UMEED project under  JKRLM  (Jammu and K ashmir Rural Livelihood
+
+Mission) at  Central University of Jammu  on October 3 rd – October 4 th, 2023  through online
+ 
+mode.  [Certificate ]
+ 
+MEMBERSHIP OF PROFES SIONAL BODIES:
+ 
+1) Member of  the International Association for Engineers (IAENG) , Membership  ID: 201761 .
+ 
+2) Member of Computer Science Teachers Association (CSTA), Membership ID: 198357984728.
+
+3) Member, Board of Studies, Department of Computer Science & IT,  Ref. No . - JU/CSc&IT /Cert/19 -
+ 
+20/173 , dated 02 -12-2019.
+ 
+TECHNICAL SKILLS:
+
+Languages known   : C, C++, Java,  C# and Python
+ 
+Datab ase  : Oracle,  SQL Serve r and MS Access
+ 
+Operating systems   : Windows , Ubuntu  and Linux Fedora
+ 
+Web Technologi es  : HTML  and Java Script
+ 
+COURSES TAUGHT :
+ 
+ Operating Systems
+
+ Data Structures
+
+ Software Engineering
+
+ Internet of Things
+ 
+ Theory of Computation
+
+ Data Science
+
+ Artificial Intelligence
+
+ Data Base Management System
+ 
+ACADEMIC ACHIEVEMENTS :
+ 
+ Completed the  8 weeks  SWAYAM  IGNOU  online certification on  “Research Ethics a nd
+ 
+Plagiarism”  with consolidated score of 86 % under roll number  2028340081  on August  29, 2022 .
+ 
+ Participated in a one week FDP / Workshop on  "Recent Trends in Security: 1OT, Blockchain,
+ 
+and Cybe r Security (RTS -2022)"  held during 19 th - 23rd, September, 2022 organized by Central
+ 
+University of Jammu, Rahya Suchani (Bagla), Dist. Samba, J & K, India.
+
+ Participated  in the 5 days International Research workshop on  "Computational Intelligence
+ 
+Methods" , held during 19 th - 23rd August, 2022, organised by Maharishi University of Information
+ 
+Technology, Noida in collaboration with Adonic Informatics.
+
+ Participated in a special lecture on the theme  “Self -Reliant Villages: The Key to  Self-Reliant
+ 
+India”  under  “Azadi Ka Amrit Mahotsav”  Organised by the Centre for Comparative Religions
+ 
+and Civilizations, Central University of Jammu and Students for Holistic Development of Humanity
+
+(J&K) held on 18 th August, 2022.
+ 
+ Partic ipated in a one week  National Level Online  Faculty Development Program  (FDP)  on “Recent
+ 
+Trends  of Mathematics for Engineers and  Scientists ” Organised  by the  Department  of
+ 
+Mathematics, Ganpat University from 25 th to 30 th July  2022.
+ 
+ Participated in a one week National Level Online Faculty Development  Program  (FDP)  on “Recent
+ 
+Trends  & Challenges in Intelligent System and Machine (RTCISM) ” Organised by the  Amity
+ 
+School of Engineering & Technology (ASET), Amity  University from 25 th to 29 th July 2022.
+
+ Participated in a one week National Level Online Facul ty Development Program (FDP) on  “ICT
+ 
+Tools for Effective Teaching and Learning ” Organised by the Amar Sewa Mandal’s Kamla Nehru
+ 
+Mahavidyalaya, Nagpur from 23 rd to 28 th May 2022.
+ 
+ Participated in SERB Funded Five -Day National e -Workshop on  “Medical Image Ana lysis using
+ 
+Artificial Intelligence (MIAAI2022)”  jointly organized by the Center  for Medical Imaging Studies
+ 
+(CMIS) under Department of Electronics and Communication Engineering, Gayatri Vidya Parishad
+
+College of Engineering (Autonomous), Visakhapatnam, in  collaboration with Sankar Foundation
+ 
+Eye Hospital and Institute, Visakhapatnam during 25 th to 29 th April, 2022.
+ 
+ Participated in a one week National Level Online Faculty Development Program  (FDP)  on
+ 
+“Machine Learning Fundamentals ” Organised by the  Departme nt of Computer Science & IT,
+ 
+Kathua Campus, University of Jammu from 23 rd to 28 th March  2022.
+ 
+ Complete d the 4 week s SWAYAM  NPTEL  online certification on  “Python for Data Science”
+ 
+with consolidated score of 60% under roll number NPTEL20C20CS80S41680123  on S ep-Oct 2020.
+ 
+ Participated in a three day Webinar Faculty Development Program on  “IOT with Artificial
+ 
+Intelligence”  organised by  Department of Electronics and Communication Engineering, Sir C R
+ 
+Reddy College of Engineering, Eluru , Andhra Pradesh  during 27 th May  – 29th May  2020.
+ 
+ Participated and successfully attempted a National Level E -Quiz on  “Data Structures and
+ 
+Algorithms”  (NLQDSA -2k20) conducted by Department of Computer Science & IT, Kathua
+ 
+Campus, University of Jammu on 27 th May 2020 with a score of 9 6%.
+ 
+ Participated in a 5 -Day National Level Online Faculty Development Program on  “Artificial
+ 
+Intelligence”  Organised by the Department of Computer Science and Engineering in collaboration
+ 
+with National Youth Council of India and Brainovision Solutions Indi a Pvt.  Ltd. from 22 nd to 26 th
+ 
+May 2020.
+
+ Participat ed in an  online Webinar on  “IOT -Hardware Design”  organised by  Department of
+ 
+Electronics and Communication Engineering on 25 th May 2020.
+ 
+ Participated in the webinar on  “Building Entrepreneurial Mindset in th e time of Pandemic”
+ 
+organised by Internal Quality Assurance Cell, VIVEK COLLEGE, Bijnor (UP) on 24 th May 2020.
+ 
+ Participated in the National Webinar on  “Artificial Intelligence & Data Science & its Global
+ 
+Impact ” organised by  Department of Department of Com puter Science and Department of
+ 
+Information  Technology,  SIES  College  of Arts,  Science  and Commerce,  Sion  (West)  in
+ 
+collaboration with Imarticus Learning on 23 rd May 2020
+ 
+ Participated in One Week National Level FDP on  “ICT Tools in Education Using MOODLE”
+ 
+organized by Internal Quality Assurance Cell (IQAC) in Association with Dept. of Computer
+
+Science and Engineering, PACE Institute of Technology and Scienc es, Ongole conducted from 22 nd
+ 
+May 2020  - 26th May  2020.
+ 
+ Participated i n Online Q uiz on  “JAVA”  conducte d by Department of Information Technology,
+ 
+Malla Reddy Institute of Engineering & Technology, Hyderabad on 25 th May 2020 with a Score of
+ 
+87%.
+
+ Participated and completed  “Teacher’s Mental Ability, General Knowledge and Aptitude Test”
+ 
+organised by Guru Nanak  College Of Education And Research, Bhandup, Mumbai successfully on
+ 
+24th May 2020 having Certificate ID: HP2ADS -CE000347.
+ 
+ Participated in one week online FDP on  “Big Data Tools”  organised by Department of Computer
+ 
+Science and Engineering & Information Tech nology in association with Computer Society of India,
+ 
+Hyderabad from 18 th May – 23rd May 2020.
+ 
+ Participated in webinar on  “Life Skills to Excel in Job Market”  organized by Department of
+ 
+Science and Humanities (English), K. Ramakrishnan College of Technolog y, Samayapuram, Trichy
+ 
+- 621112, on 23 rd May 2020.
+ 
+ Participated in  “Principles of Management Faculty Development Program”  conducted by CSE
+ 
+Department from Panimalar Institute of Technology in association with CSI and IEEE Computer
+
+Society  from 18 th May 202 0 – 22nd May  2020.
+ 
+ Participated in the webinar on  “ML  for Health Care Application”  organised by Sreyas Institute
+ 
+of Engineering and Technology in association with PenTech on 21 st May 2020.
+ 
+ Participated in the webinar on  “Expanding Scope  of Robotics”  organi sed by Sri Eshwar College
+ 
+of Engineering, Coimbatore on 21 st May 2020.
+ 
+ Participated in the webinar on  “Deep Learning Using Python”  hosted by Panimalar Institute of
+ 
+Technology in association with PenTech E Learning on 20 th May 2020.
+ 
+ Participated in the Nati onal Webinar on  “Machine Learning and Deep Learning”  organised by
+ 
+P.G Department of Computer Science, Kasturba Gandhi Degree College & PG College for Women,
+
+Secunderabad on 20 th May 2020.
+ 
+ Participated and completed On Line Quiz on  “Java Programming”  organ ised by Department of
+ 
+Computer Engineering, Parikrama Polytechnic, Kashti, Ahmednagar with  95%  score on 21 st May
+ 
+2020.
+
+ Participated in the webinar on  “Future o f AI”  organised by IETE -MUMBAI in association with
+ 
+PenTech on 20 th May 2020.
+ 
+ Participated in webi nar on  “Crypto Currencies and Block Chain”  organised by Department of
+ 
+Computer Science and Engineering, Chalapathi Institute of Engineering and Technology, AP in
+
+collaboration with LEADINGINDIA.AI on 19 th May 2020.
+ 
+ Participated and completed  “Three Day Nat ional Level Webinar on CNN, RNN & NLP”
+ 
+organised by Vivekanand College for Advanced Computer and Information Science, Surat in
+
+collaboration with IQAC cell on 18 th, 19th & 20 th May, 2020.
+ 
+ Participated and successfully completed the Online Short term Skill  Training Programme on
+ 
+“Python : Beginners Tutorial”  organised by Entrepreneurship, Innovation and Career Hub,
+ 
+Alagappa U niversity, Karaikudi from 11 th May 2020  – 17th May  2020 under the aegis of  MHRD
+ 
+RUSA 2.0 Scheme.
+
+ Participated and successfully attempted  a Quiz on  “Information Communication Technology
+ 
+(Ict)”  conducted by Bharat College of Engineering, Badlapur (W) with a score of 87%.
+
+ Participated in National Level Webinar on  “Data Science”  conducted by PG & Research
+ 
+Department of Computer Science, Kaamad henu Arts and Science College, Tamil Nadu -638503 on
+ 
+16th May 2020.
+ 
+ Participated  in series  of webinar  on “Cutting  Edge  Technologies  in Electronics  and
+ 
+Communication  Engineering”  organised by Department of Electronics and Communication
+ 
+Engineering during 14 th May  – 16th May 2020.
+ 
+ Participated and successfully attended  Leadership Talk  With Dr. Pramod Chaudhari, Founder,
+ 
+Chairman, Praj Industries Limited and Dr. Abhay Jere, Chief Innovation Officer MHRD Innovation
+
+Cell, Saturday, 16 th May 2020 at 01.00 PM by  MH RD's Innovation Cell.
+ 
+ Participated and successfully completed the National Level Awareness Quiz on  “Test Your
+ 
+Immunity  on Fact Versus Fake News on  COVID -19” organised by Sakthi Institute of Information
+ 
+and Management Studies (SIIMS) on  16th May  2020.
+ 
+ Participated in the Online Faculty Development Program on  “Fuzzy Sets  and Systems”  organised
+ 
+by Department Of Mathematics, Patrician College Of Arts And Science, Chennai on 16 th May 2020.
+ 
+ Participated in the webinar on  “Electric Vehicle Design”  organised by Hi ndustan Institute of
+ 
+Technology and Science in association with PenTech on 15 th May 2020.
+ 
+ Participated in National webinar on  “Research Publication: Skills, Ethics And Misconducts”
+ 
+organised by Department of Chemistry (S&H), Kumaraguru College of Technolog y, Coimbatore,
+ 
+held on 15 th May 2020.
+ 
+ Participated in the webinar on  “Tips  and Trics for  Effective Research”  organised by department
+ 
+of Computer Application & IQAC, Idhaya College  for Women, Kumbakonam,  Thanjavur ( DT)-
+ 
+612001 on 15 th May  2020.
+ 
+ Participated  and successfully completed  a Quiz  on “Python  Programming”  organised  by
+ 
+Department of Computer Engineering, Suman Ramesh Tulsiani Technical Campus  – Faculty of
+ 
+Engineering on 15 th May  2020.
+ 
+ Participated in the webinar on  “IPR AND PATENT DRAFTING”  organized  by IQAC, St. Peter’s
+ 
+Institute of Higher Education and Research on 14 th May 2020.
+ 
+ Participated International Webinar on  “Impact Of Covid -19 On Global Economy: Supply Chain
+ 
+And Business Continuity”  organised by Department of Commerce and Financial Studies,  Central
+ 
+University of Jharkhand, Ranchi on 14 th May 2020.
+ 
+ Participated in the webinar on  “Virtual Reality”  organised by Department of Computer Science &
+ 
+Application, SRM  Institute of Science and Technology, University in Chennai, Tamil Nadu in
+ 
+association  with PenTech on 14 th May 2020.
+ 
+ Participated and successfully completed  an Online Quiz on  “Artificial Intelligence”  Organized by
+ 
+Department of Computer Engineering, Rajgad Dnyanpeeth Shri Chhatrapati Shivajiraje  College of
+ 
+Engineering on 14 th May  2020.
+ 
+ Participated in the webinar on “ Blockchain Technology  for New Era of  Higher Education”
+ 
+Organised by Blockchain Study Circle, Department of Computer Science and Engineering,
+
+University School of Information and Communication Technology, Gautam Buddha Universit y,
+ 
+Greater Noida, Uttar Pradesh, INDIA  held on 14 th May  2020 .
+
+ Participated in  “Online Awareness Quiz on Pandemic COVID -19” Organized by the Department
+ 
+of Microbiology, Kongu College  of Arts And Science, Tiruchirappalli held on 14 th May 2020 with
+ 
+score of 9 0%.
+ 
+ Actively participated in IEEE Bangalore Section Researchers Forum Online Workshop on  “Free
+ 
+MOOC to Complement Engineering Education”  held on 13 th May, 2020.
+ 
+ Attended the o ne day online hands -on workshop o n “Microchip's Internet of Things”  in
+ 
+associatio n with  Apsis  Solutions,  Bengaluru,  organised  by Department  of Electronics  &
+ 
+Communication Engineering, Sri Venkateshwara College of En gineering, Bengaluru -562157 held
+ 
+on 13 th May 2020.
+ 
+ Attended a Webinar on  IBM WEBSPHERE MQ TOOL  by Mr. B.Jayaram, Asst. Pro f at Computer
+ 
+Science and Engineering, Balaji Institute of Technology & Science, with meeting ID 1367012091
+
+on 12 th May 2020.
+ 
+ Participated and secured 3 rd position Quiz and Debate Competition  “Tech Fest 2k17”  organised by
+ 
+‘Department  of Computer  Science  and IT, Bhaderwah  Campus,  University  of Jammu  in
+ 
+collaboration with Indian Army 4RR & Computer Soc iety of India (CSI)’ on 24 th Aug  2017.
+ 
+ Delivered guest speaker talk in One Day Seminar on the theme  “Secure Environment and Social
+ 
+Stability as a Prerequisite f or Peace and Economic Development in Region and Students
+ 
+Contribution in this Direction”  organized by ‘Indian Army 4 th BN Rashtriya Rifles (Bihar) at
+ 
+Lalded Auditorium Bhaderwah Campus, University of Jammu’ on 21 st Dec, 2015.
+ 
+ Participated and secured 2 nd position in  “Chenab Valley Youth Festival SANGAM -2015”  Javelin
+ 
+Throw organised by ‘Bhaderwah Campus, University of Jammu and 4 th BN Rashtriya Rifles (Bihar)’
+ 
+in 28 th Nov  – 30th Nov 2015.
+ 
+ Participated in NCC  “Basic Leadership Camp”  at the rank of Senior und er Officer (SUO) under
+ 
+cadet no. JK/SD/13/77670 in unit ‘2 J&K Girls BN NCC, Jammu’ on 10 th Aug to 19 th Aug, 2014.
+ 
+ Participated and secured First position in  “Department of Youth Services & Sports” , ‘J&K State
+ 
+School Games 2010 -11 Inter District Championsh ip of Jammu Division’ U/19 (Boys) Kho -Kho on
+ 
+18th Oct - 20th Oct, 2010.
+ 
+LIFE TIME  ACHIEVEMENTS:
+ 
+ Achieved  National  Cadet  Corps  (NCC)  ‘B’ and ‘C’ certificate s under  the cadet  number
+ 
+JKSD/13/77670.  [Certificates ]
+ 
+ Played the  Kho -Kho  game at the national level.
+ 
+ Played the  Chess  game at the  inter national level.  [FIDE ID:  537061690 ]
+ 
+REFERENCES:
+ 
+Name   Designation   Address   Contact   Email
+ 
+Dr. Deepti
+
+Malhotra
+ 
+Assistant
+
+Professor
+ 
+Department  of Computer
+ 
+Science  & IT, Central
+ 
+University of Jammu, Jammu.
+ 
++919419228428  deepti.csit@cuja
+
+mmu.ac.in
+ 
+Dr. Sourabh
+
+Shastri
+ 
+Assistant
+
+Professor
+ 
+Department  of Computer
+ 
+Science  & IT, University of
+ 
+Jammu, Jammu.
+ 
++919419171476  sourabhshastri@g
+
+mail.com
+
+Dr. Shashank
+
+Dattatray
+
+Kulkarni
+ 
+Assistant
+
+Professor
+ 
+Department  of Polity  and
+ 
+Public Administration, Central
+
+University of Jharkhand .
+ 
++918275007036  agroneershashank
+
+@gmail.com
+ 
+PERSONAL DETAILS :
+ 
+Name   : Kuljeet Singh
+ 
+Father’s N ame   : Hon. Capt.  Sh. Chuni Lal  (Retd.)
+ 
+Mother’s Name   : Smt. Nirmala Devi
+ 
+Date of Birth   : 9th Feb, 1996
+ 
+Gender   : Male
+ 
+Nationality   : Indian
+ 
+Passport No.   : V4839509
+ 
+Blood Group   : B+
+ 
+Languages known  : English and  Hindi
+ 
+Address   : Village  Shanna  Filler  Thakarie,  Tehsil & Dis trict Kishtwar,
+ 
+Post Office - Shiv Nagar,  Jammu  & Kashmir , 182205  – India.
+ 
+DECLARATION:
+
+I hereby declare that all the information furnished above is true to the best of my knowledge.
+
+Place:  Delhi -NCR
+ 
+Date:  08/04/2025   Kuljeet Singh
