@@ -177,22 +177,24 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="relative overflow-hidden bg-slate-950 py-20 text-slate-50">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.14),transparent_25%)]" />
+    <section id="skills" className="relative overflow-hidden bg-background py-20 text-foreground">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.08),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.10),transparent_25%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(139,92,246,0.14),transparent_25%)]" />
       <div className="container relative z-10 mx-auto px-6">
         <div className="mb-12 max-w-3xl">
-          <Badge className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/10">
+          <Badge className="border-accent/30 bg-accent/10 text-accent hover:bg-accent/10">
             3D Skills & Research Domains
           </Badge>
-          <h2 className="mt-4 text-3xl font-bold md:text-5xl">Technical Expertise</h2>
-          <p className="mt-4 text-lg text-slate-300">
+          <h2 className="mt-4 text-3xl font-bold text-foreground md:text-5xl">
+            Technical Expertise
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
             A 3D representation of the tools, platforms, and research areas that define my academic
             and applied AI work.
           </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md">
+          <div className="overflow-hidden rounded-[2rem] border border-border bg-card/60 shadow-2xl backdrop-blur-md">
             <div className="h-[460px] w-full">
               {supported !== false ? (
                 <SkillScene skills={orbSkills} />
@@ -201,7 +203,7 @@ export const SkillsSection = () => {
                   {orbSkills.map((skill) => (
                     <span
                       key={skill.label}
-                      className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"
+                      className="rounded-full border border-border bg-card/60 px-4 py-2 text-sm text-foreground"
                     >
                       {skill.label}
                     </span>
@@ -209,22 +211,22 @@ export const SkillsSection = () => {
                 </div>
               )}
             </div>
-            <div className="border-t border-white/10 bg-slate-950/60 px-5 py-4 text-sm text-slate-300">
+            <div className="border-t border-border bg-card/70 px-5 py-4 text-sm text-muted-foreground">
               Drag and explore the orbiting skills cluster.
             </div>
           </div>
 
           <div className="space-y-6">
-            <Card className="rounded-[1.75rem] border-white/10 bg-white/5 p-6 text-slate-50 backdrop-blur-md">
+            <Card className="rounded-[1.75rem] border-border bg-card/60 p-6 text-card-foreground backdrop-blur-md">
               <div className="mb-4 flex items-center gap-3">
-                <Brain className="h-5 w-5 text-cyan-300" />
-                <h3 className="text-xl font-semibold">Research Domains</h3>
+                <Brain className="h-5 w-5 text-accent" />
+                <h3 className="text-xl font-semibold text-card-foreground">Research Domains</h3>
               </div>
               <div className="flex flex-wrap gap-3">
                 {domainExpertise.map((domain) => (
                   <span
                     key={domain}
-                    className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-100"
+                    className="rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm text-foreground"
                   >
                     {domain}
                   </span>
@@ -238,19 +240,19 @@ export const SkillsSection = () => {
                 return (
                   <Card
                     key={item.category}
-                    className="rounded-[1.5rem] border-white/10 bg-white/5 p-5 text-slate-50 backdrop-blur-md"
+                    className="rounded-[1.5rem] border-border bg-card/60 p-5 text-card-foreground backdrop-blur-md"
                   >
                     <div className="mb-4 flex items-center gap-3">
-                      <div className="rounded-xl bg-white/10 p-2">
-                        <Icon className="h-5 w-5 text-violet-300" />
+                      <div className="rounded-xl bg-secondary p-2">
+                        <Icon className="h-5 w-5 text-violet-600 dark:text-violet-300" />
                       </div>
-                      <h4 className="font-semibold">{item.category}</h4>
+                      <h4 className="font-semibold text-card-foreground">{item.category}</h4>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {item.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1.5 text-sm text-slate-200"
+                          className="rounded-full border border-border bg-secondary px-3 py-1.5 text-sm text-foreground"
                         >
                           {skill}
                         </span>
@@ -261,8 +263,8 @@ export const SkillsSection = () => {
               })}
             </div>
 
-            <Card className="rounded-[1.75rem] border-white/10 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 p-6 text-slate-50 backdrop-blur-md">
-              <h3 className="text-xl font-semibold">Professional Strengths</h3>
+            <Card className="rounded-[1.75rem] border-border bg-gradient-to-br from-violet-500/10 to-cyan-500/10 p-6 text-card-foreground backdrop-blur-md">
+              <h3 className="text-xl font-semibold text-card-foreground">Professional Strengths</h3>
               <div className="mt-4 flex flex-wrap gap-3">
                 {[
                   "Research Methodology",
@@ -274,7 +276,7 @@ export const SkillsSection = () => {
                 ].map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-violet-300/20 bg-violet-300/10 px-4 py-2 text-sm text-violet-100"
+                    className="rounded-full border border-violet-300/20 bg-violet-300/10 px-4 py-2 text-sm text-foreground"
                   >
                     {item}
                   </span>
