@@ -415,3 +415,65 @@ All colors MUST be HSL.
     .animate-spin-slow,
     .animate-bounce { animation: none !important; }
   }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: hsl(222 47% 7%);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(circle at center, black 30%, transparent 78%);
+}
+
+.hero-glow {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.28), transparent 28%),
+    radial-gradient(circle at 70% 40%, rgba(139, 92, 246, 0.26), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.18), transparent 24%);
+  filter: blur(28px);
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.glass-card-3d {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.04)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.section-noise {
+  position: relative;
+}
+
+.section-noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 0.6px, transparent 0.6px);
+  background-size: 16px 16px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-glow {
+    filter: blur(18px);
+  }
+}
