@@ -2,7 +2,7 @@
 
 A modern, responsive **3D-enhanced academic portfolio** built with **React + TypeScript + Vite**, styled with **Tailwind CSS** and **shadcn/ui**, powered by **Three.js / React Three Fiber**.
 
-🌐 **Live site:** https://kportfolio-rouge.vercel.app
+🌐 **Live site:** https://kuljeet-portfolio.vercel.app/ 
 
 ---
 
